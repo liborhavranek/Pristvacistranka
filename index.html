@@ -1,10 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mine.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <script src="js/cube.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-$END$
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var header = document.querySelector("[data-header]");
+        if (!header) return;
+
+        function toggleScrollClass() {
+            if ((window.scrollY || window.pageYOffset) >= 50) {
+                header.classList.add("is-scroll");
+            } else {
+                header.classList.remove("is-scroll");
+            }
+        }
+
+        toggleScrollClass();
+        window.addEventListener("scroll", toggleScrollClass);
+    });
+</script>
+<div class="micropage micropage__header" data-header="">
+    <div class="container container--header">
+        <div class="micropage__header__wrapper">
+            <div class="micropage__header__logo">
+                <a href="./">
+                    <img src="https://beta.dokladujto.cz/assets/theme/img/logo/logo.svg?v=2025071845548" alt="logo">
+                </a>
+            </div>
+            <nav class="micropage__header__nav" data-nav="">
+                <ul>
+                    <li>
+                    </li>
+                </ul>
+                <div class="micropage__header__buttons">
+                    <a class="btn btn-bordered micropage__header__button" href="https://beta.dokladujto.cz/prihlaseni">
+                        Přihlásit se
+                    </a>
+                    <a class="btn btn-primary micropage__header__button" href="https://beta.dokladujto.cz/registrace">
+                        Vyzkoušet zdarma
+                    </a>
+                </div>
+                <div class="micropage__header__contacts">
+                    <a class="micropage__header__contact micropage__header__contact--email" href="mailto:lukas.hejkrlik@benecb.cz">lukas.hejkrlik@benecb.cz</a>
+                    <a class="micropage__header__contact micropage__header__contact--phone" href="tel:+420 607 909 093">+420 607 909 093</a>
+                </div>
+                <div class="micropage__header__socials">
+                </div>
+            </nav>
+            <button class="micropage__header__ham" data-ham=""></button>
+        </div>
+    </div>
+</div>
+
+<section class="fullscreen-section" style="
+    position: relative;
+    height: calc(100vh - 96px);
+    background-image: url('img/img-slider-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+/* ✅ rovnoměrné odsazení vlevo i vpravo */
+">
+    <!-- Grid přechod -->
+    <div class="grid-overlay"></div>
+
+    <!-- Přeliv -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: rgba(0,108,255,.55);
+        z-index: 0;
+    "></div>
+
+    <!-- Textová část vlevo -->
+    <div class="fullscreen-section__content" style="
+        position: relative;
+        z-index: 1;
+        max-width: 50%;
+            padding: 0 5vw;
+    ">
+        <h1 style="
+            font-family: 'Roboto', sans-serif;
+            font-weight: 550;
+            color: #fff;
+            font-size: 3.75rem;
+            line-height: 1.3;
+            letter-spacing: 0.02rem;
+            margin: 0 0 1.2rem;
+        ">
+            Vytvořeno účetní firmou<br>Navrženo pro podnikatele
+        </h1>
+
+        <p style="
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 1.8rem;
+            line-height: 1.6;
+            color: #fff;
+            margin: 0 0 2rem;
+        ">
+            dokladuj.to vzniká v účetní kanceláři, která už měla dost šanonů.<br>
+            Teď vám pomůže mít doklady připravené, přehledné a dostupné kdykoli.
+        </p>
+    </div>
+
+    <!-- Obrázek vpravo -->
+    <div class="fullscreen-section__image" style="
+        position: relative;
+        z-index: 1;
+        max-width: 45%;
+    ">
+        <img src="img/img-slider-additional.png" alt="Náhled aplikace" style="
+            width: 100%;
+            height: auto;
+        ">
+    </div>
+</section>
+
+<section class="bg-white py-16 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- Textová část -->
+        <div class="bg-[#f8fbff] border border-[#e1ecf9] rounded-2xl p-8 shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+                Nahrajete doklady, <br>
+                <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+            </h2>
+            <ul class="space-y-4 mt-6 text-gray-700 text-base">
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Mobilní a webová aplikace umožňují snadné nahrávání odkudkoli.
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Každý doklad se <strong>automaticky zařadí a očísluje</strong>.
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Vše je <strong>na jednom místě</strong>, připravené pro účetní.
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Žádné <strong>ztracené účtenky</strong>, žádné šanony.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Obrázek -->
+        <div class="flex justify-center">
+            <img src="assets/images/mockup.png" alt="Náhled aplikace" class="rounded-xl shadow-md max-w-full">
+        </div>
+    </div>
+</section>
+
+
+
 </body>
 </html>
