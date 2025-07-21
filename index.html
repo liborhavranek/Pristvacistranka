@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <script src="js/cube.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -70,6 +72,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+        background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,18 +96,10 @@
     <div class="fullscreen-section__content" style="
         position: relative;
         z-index: 1;
-        max-width: 50%;
+        max-width: 64%;
             padding: 0 5vw;
     ">
-        <h1 style="
-            font-family: 'Roboto', sans-serif;
-            font-weight: 550;
-            color: #fff;
-            font-size: 3.75rem;
-            line-height: 1.3;
-            letter-spacing: 0.02rem;
-            margin: 0 0 1.2rem;
-        ">
+        <h1 class="h1-hero">
             Vytvořeno účetní firmou<br>Navrženo pro podnikatele
         </h1>
 
@@ -123,16 +118,794 @@
 
     <!-- Obrázek vpravo -->
     <div class="fullscreen-section__image" style="
-        position: relative;
-        z-index: 1;
-        max-width: 45%;
-    ">
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 48%;
+">
         <img src="img/img-slider-additional.png" alt="Náhled aplikace" style="
-            width: 100%;
-            height: auto;
-        ">
+        width: 100%;
+        height: auto;
+        display: block;
+    ">
     </div>
 </section>
+
+
+
+<section class="py-28 bg-gradient-to-b from-white via-[#f8fbff] to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="h1-section_two text-center md:text-left" data-aos="fade-down">
+            Spojujeme podnikatele a účetní v jednom systému
+        </h1>
+
+        <p class="text-[1.5rem] text-gray-700 max-w-4xl mx-auto text-center mb-20 font-light" data-aos="fade-up" data-aos-delay="100">
+            Vytvořili jsme jednoduchý způsob, jak podnikatelé snadno předají doklady a účetní. Stačí k tomu tři jednoduché kroky.
+        </p>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+
+            <div data-aos="fade-down" data-aos-delay="500">
+
+            <!-- KROK 1 -->
+            <div class="flex flex-col items-center text-center px-4 p-8 feature-card">
+                <!-- Ikona + číslo -->
+                <div class="relative w-24 h-24 bg-[#006aff] text-white rounded-full flex items-center justify-center shadow-lg mb-6 feature-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 10l5 5 5-5M12 15V3M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+                    </svg>
+                    <div class="absolute -bottom-3 right-0 bg-white text-[#006aff] w-10 h-10 rounded-full shadow ring-2 ring-white flex items-center justify-center text-lg font-bold">
+                        1
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-[#1a1a1a] leading-snug">
+                    Nahraj doklad
+                </h3>
+
+                <p class="text-[#006aff] text-xl font-semibold mb-2 leading-tight">
+                    Už žádné ztracené účtenky
+                </p>
+
+                <p class="text-[#1a1a1a] text-[1.25rem] font-light leading-relaxed max-w-sm">
+                    Doklady snadno nahraješ mobilem nebo webem. Nahrané doklady se nikdy neztratí a jsou vždy dostupné.
+                </p>
+            </div>
+            </div>
+
+            <!-- KROK 2 -->
+            <div data-aos="fade-down" data-aos-delay="800">
+                <div class="flex flex-col items-center text-center px-4 p-8 feature-card">
+                <div class="relative w-24 h-24 bg-[#006aff] text-white rounded-full flex items-center justify-center shadow-lg mb-6 feature-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <div class="absolute -bottom-3 right-0 bg-white text-[#006aff] w-10 h-10 rounded-full shadow ring-2 ring-white flex items-center justify-center text-lg font-bold">
+                        2
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-[#1a1a1a] leading-snug">
+                    AI vytěží doklad
+                </h3>
+
+                <p class="text-[#006aff] text-xl font-semibold mb-2 leading-tight">
+                    AI udělá práci za tebe
+                </p>
+
+                <p class="text-[#1a1a1a] text-[1.25rem] font-light leading-relaxed max-w-sm">
+                    Umělá inteligence vytěží dodavatele, částky, datumy i položky. Doklad je připravený k zaúčtování bez práce.
+                </p>
+            </div>
+            </div>
+            <!-- KROK 3 -->
+            <div data-aos="fade-down" data-aos-delay="1100">
+                <div class="flex flex-col items-center text-center px-4 p-8 feature-card">
+                <div class="relative w-24 h-24 bg-[#006aff] text-white rounded-full flex items-center justify-center shadow-lg mb-6 feature-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0118 14.2V11a6 6 0 00-4-5.7V4a2 2 0 10-4 0v1.3A6 6 0 006 11v3.2c0 .5-.2 1-.6 1.4L4 17h5v1a3 3 0 106 0v-1z" />
+                    </svg>
+                    <div class="absolute -bottom-3 right-0 bg-white text-[#006aff] w-10 h-10 rounded-full shadow ring-2 ring-white flex items-center justify-center text-lg font-bold">
+                        3
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4 text-[#1a1a1a] leading-snug">
+                    Účetní pracuje
+                </h3>
+
+                <p class="text-[#006aff] text-xl font-semibold mb-2 leading-tight">
+                    Účetní má vše připravené
+                </p>
+
+                <p class="text-[#1a1a1a] text-[1.25rem] font-light leading-relaxed max-w-sm">
+                    Doklady jsou roztříděné, přehledné a ihned připravené k zaúčtování. Žádné papírování navíc.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="relative bg-gradient-to-br from-white via-[#f2f7ff] to-white py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-20">
+
+        <!-- Text vlevo -->
+        <div class="w-full lg:w-1/2 z-10">
+            <h2 class="text-5xl font-extrabold text-[#006aff] leading-tight mb-6">
+                Chytrá fakturace<br>
+                s nulovou námahou
+            </h2>
+            <p class="text-xl text-gray-700 font-light mb-8 max-w-lg">
+                Vystav fakturu bez překlepů, odešli ji klientovi a dej účetnímu volné ruce. Systém se postará o zbytek.
+            </p>
+            <a href="#" class="inline-block bg-[#006aff] text-white px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-[#0051d4] transition">
+                Vyzkoušet vystavení faktury
+            </a>
+        </div>
+
+        <!-- Pravá část: Kroky -->
+        <div class="w-full lg:w-1/2 relative space-y-12">
+            <!-- KROK 1 -->
+            <div class="flex items-start gap-6 group">
+                <div class="text-3xl font-bold text-[#cbd5e1] group-hover:text-[#006aff]">01</div>
+                <div>
+                    <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Automatické vyplnění</h3>
+                    <p class="text-gray-600 max-w-md text-sm">
+                        Faktura se předvyplní podle posledního dokladu nebo kontaktu. Méně práce, méně chyb.
+                    </p>
+                </div>
+            </div>
+
+            <!-- KROK 2 -->
+            <div class="flex items-start gap-6 group">
+                <div class="text-3xl font-bold text-[#cbd5e1] group-hover:text-[#006aff]">02</div>
+                <div>
+                    <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Odeslání jedním klikem</h3>
+                    <p class="text-gray-600 max-w-md text-sm">
+                        E-mail s QR kódem, archivace, tisk i export. Vše na jedno kliknutí – systém se postará.
+                    </p>
+                </div>
+            </div>
+
+            <!-- KROK 3 -->
+            <div class="flex items-start gap-6 group">
+                <div class="text-3xl font-bold text-[#cbd5e1] group-hover:text-[#006aff]">03</div>
+                <div>
+                    <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Párování a přehled</h3>
+                    <p class="text-gray-600 max-w-md text-sm">
+                        Notifikace, automatické párování plateb, přehled o zaplacených a nezaplacených fakturách.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="relative bg-gradient-to-br from-[#f8fbff] via-[#ecf3ff] to-[#ffffff] py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEVÁ STRANA -->
+        <div class="relative z-10" data-aos="fade-up">
+            <div class="mb-10">
+                <h2 class="text-5xl font-extrabold text-[#006aff] leading-tight mb-4">Chytrá fakturace</h2>
+                <p class="text-xl text-gray-700 font-light max-w-lg">
+                    Vystav fakturu bez překlepů, odešli ji klientovi a dej účetnímu volné ruce.
+                </p>
+            </div>
+
+            <!-- Faktura box -->
+            <div class="relative rounded-3xl overflow-hidden shadow-xl border border-[#d9e6ff] backdrop-blur-md bg-white/80">
+                <img src="/img/invoice.png" alt="Faktura"
+                     class="w-full h-auto object-contain transition-transform duration-300 hover:scale-[1.015]" />
+                <!-- Glow overlay -->
+                <div class="absolute inset-0 bg-black/5 pointer-events-none"></div>
+            </div>
+        </div>
+
+        <!-- PRAVÁ STRANA – body -->
+        <div class="space-y-12" data-aos="fade-up" data-aos-delay="150">
+            <!-- Item 1 -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-[#006aff]/10 rounded-xl shadow-md">
+                    <i data-lucide="file-text" class="w-6 h-6 text-[#006aff]"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#006aff] mb-1">Automatické vyplnění</h3>
+                    <p class="text-gray-700 text-lg font-light max-w-md">
+                        Faktura se předvyplní podle posledního dokladu nebo kontaktu.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-[#006aff]/10 rounded-xl shadow-md">
+                    <i data-lucide="send" class="w-6 h-6 text-[#006aff]"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#006aff] mb-1">Odeslání na klik</h3>
+                    <p class="text-gray-700 text-lg font-light max-w-md">
+                        Odešli fakturu e-mailem s QR kódem. Systém ji i archivuje.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-[#006aff]/10 rounded-xl shadow-md">
+                    <i data-lucide="check-circle" class="w-6 h-6 text-[#006aff]"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#006aff] mb-1">Přehled o platbách</h3>
+                    <p class="text-gray-700 text-lg font-light max-w-md">
+                        Sleduj, kdo zaplatil. Upozornění i párování plateb je automatické.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="relative py-32 bg-[#002f47] text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-extrabold text-center mb-20 leading-tight">
+            Jak funguje chytrá fakturace
+        </h2>
+
+        <div class="relative grid gap-24 md:grid-cols-1 lg:grid-cols-1">
+
+            <!-- Krok 1 -->
+            <div class="relative pl-20">
+                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">01</span>
+                <div class="flex items-start gap-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
+                        🧾
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Vyplnění bez práce</h3>
+                        <p class="text-white/80 text-lg font-light max-w-2xl">
+                            Faktura se předvyplní podle dřívějších údajů nebo kontaktu. Bez přepisování, bez chyb.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Krok 2 -->
+            <div class="relative pl-20">
+                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">02</span>
+                <div class="flex items-start gap-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
+                        📩
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Odeslání a upozornění</h3>
+                        <p class="text-white/80 text-lg font-light max-w-2xl">
+                            Odeslání faktury klientovi jedním klikem. E-mailem, s QR kódem i notifikací.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Krok 3 -->
+            <div class="relative pl-20">
+                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">03</span>
+                <div class="flex items-start gap-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
+                        🔗
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Účetní ji má ihned</h3>
+                        <p class="text-white/80 text-lg font-light max-w-2xl">
+                            Faktura se automaticky zobrazí účetní. Nemusíte nic posílat ani řešit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Krok 4 -->
+            <div class="relative pl-20">
+                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">04</span>
+                <div class="flex items-start gap-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
+                        📊
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Párování plateb</h3>
+                        <p class="text-white/80 text-lg font-light max-w-2xl">
+                            Platby se párují automaticky podle účtu. Upozornění na neuhrazené faktury přichází včas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="py-28 bg-gradient-to-b from-[#006aff] via-[#3c7ced] to-[#508ffe]" id="features">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Nadpis -->
+        <h2 class="text-5xl font-extrabold text-center text-[#1a1a1a] mb-12">
+            Více funkcí
+        </h2>
+        <p class="max-w-3xl text-center text-xl text-gray-600 font-light mx-auto mb-20">
+            Systém, který usnadňuje podnikání. Jednoduchý, bezpečný a připravený růst s vámi.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+
+            <!-- Levá strana -->
+            <div class="space-y-12">
+                <div class="flex items-start gap-5 text-right">
+                    <div class="flex-1">
+                        <h5 class="text-xl font-bold text-[#006aff]">Aplikace vždy po ruce</h5>
+                        <p class="text-[1.1rem] text-gray-700 font-light">
+                            Měj přehled o všem, ať jsi kdekoli. V mobilu i na webu.
+                        </p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-[#006aff]/10 text-[#006aff] flex items-center justify-center text-2xl shadow">
+                        📱
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-5 text-right">
+                    <div class="flex-1">
+                        <h5 class="text-xl font-bold text-[#006aff]">Vhodné pro firmy</h5>
+                        <p class="text-[1.1rem] text-gray-700 font-light">
+                            Připraveno pro podnikání, malé i velké týmy i účetní kanceláře.
+                        </p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-[#006aff]/10 text-[#006aff] flex items-center justify-center text-2xl shadow">
+                        🧾
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-5 text-right">
+                    <div class="flex-1">
+                        <h5 class="text-xl font-bold text-[#006aff]">Chat a podpora</h5>
+                        <p class="text-[1.1rem] text-gray-700 font-light">
+                            Když si nevíš rady, jsme tu pro tebe. Rychlá podpora přes chat.
+                        </p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-[#006aff]/10 text-[#006aff] flex items-center justify-center text-2xl shadow">
+                        💬
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obrázek uprostřed -->
+            <div class="flex justify-center">
+                <img src="/static/images/features-mobile.png" alt="iPhone mockup" class="w-[300px] md:w-[360px] lg:w-[400px] drop-shadow-2xl animate-fade-in" />
+            </div>
+
+            <!-- Pravá strana -->
+            <div class="space-y-12">
+                <div class="flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-full bg-[#006aff]/10 text-[#006aff] flex items-center justify-center text-2xl shadow">
+                        👁️
+                    </div>
+                    <div class="flex-1">
+                        <h5 class="text-xl font-bold text-[#006aff]">Perfektní zobrazení</h5>
+                        <p class="text-[1.1rem] text-gray-700 font-light">
+                            Optimalizované pro všechny obrazovky, mobilní i desktopové.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-full bg-[#006aff]/10 text-[#006aff] flex items-center justify-center text-2xl shadow">
+                        🔒
+                    </div>
+                    <div class="flex-1">
+                        <h5 class="text-xl font-bold text-[#006aff]">Zabezpečení dat</h5>
+                        <p class="text-[1.1rem] text-gray-700 font-light">
+                            Ochrana vašich údajů je pro nás na prvním místě.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-full bg-[#006aff]/10 text-[#006aff] flex items-center justify-center text-2xl shadow">
+                        🌙
+                    </div>
+                    <div class="flex-1">
+                        <h5 class="text-xl font-bold text-[#006aff]">Tmavý režim</h5>
+                        <p class="text-[1.1rem] text-gray-700 font-light">
+                            Šetři oči s tmavým režimem, který si můžeš přepnout kdykoli.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-28 bg-gradient-to-b from-white via-[#f8fbff] to-white">
+    <div class="max-w-7xl mx-auto px-1 md:px-4 lg:px-6">
+        <h1 class="h1-section_two text-center md:text-left" data-aos="fade-up">
+            Spojujeme podnikatele a účetní v jednom systému
+        </h1>
+
+        <p class="text-[1.5rem] text-gray-700 max-w-4xl mx-auto text-center mb-20 font-light" data-aos="fade-up" data-aos-delay="100">
+            Vytvořili jsme chytrý a jednoduchý způsob, jak podnikatelé snadno předají doklady a účetní je okamžitě vidí, roztříděné a připravené ke zpracování. Stačí k tomu tři jednoduché kroky.
+        </p>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+
+                <!-- KROK 1 -->
+                <div class="relative bg-[#004fcf] text-white p-6 rounded-tl-[1.5rem] rounded-tr-[1.5rem] rounded-bl-[1.5rem] rounded-br-none shadow-xl flex flex-col justify-between min-h-[360px]">
+
+                    <!-- Label vlevo nahoře -->
+                    <div class="absolute -top-5 -left-5 bg-[#3b82f6] px-5 py-2.5 text-white text-xl font-extrabold tracking-wide rounded-br-lg shadow-md">
+                        Nahraj doklad
+                    </div>
+
+                    <!-- Ikona -->
+                    <div class="absolute top-14 left-1/2 -translate-x-1/2">
+                        <div class="w-20 h-20 rounded-full bg-white/30 flex items-center justify-center shadow-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Obsah -->
+                    <div class="flex-1 pt-36 text-center">
+                        <h3 class="text-2xl font-extrabold mb-4 text-white leading-tight">
+                            Už žádné ztracené doklady
+                        </h3>
+                        <p class="font-light text-[1.2rem] leading-relaxed text-[#fefefe] mb-8">
+                            Mobilní a webová aplikace umožňují snadné nahrávání dokladů odkudkoli. Žádné ztracené účtenky, žádné šanony. Jen systém, co šetří čas.
+                        </p>
+                    </div>
+
+                    <!-- Číslo -->
+                    <div class="absolute left-1/2 -translate-x-1/2 bottom-[-2rem] bg-white text-[#004fcf] w-20 h-20 flex items-center justify-center rounded-full shadow-2xl text-3xl font-extrabold ring-4 ring-white/50">
+                        01
+                    </div>
+                </div>
+
+
+                <!-- KROK 2 -->
+                <div class="relative bg-[#006aff] text-white p-6 rounded-tl-[1.5rem] rounded-tr-[1.5rem] rounded-bl-[1.5rem] rounded-br-none shadow-xl flex flex-col justify-between min-h-[360px]">
+
+                    <!-- Label vlevo nahoře -->
+                    <div class="absolute -top-5 -left-5 bg-[#508FFE] px-5 py-2.5 text-white text-xl font-extrabold tracking-wide rounded-br-lg shadow-md">
+                        AI vytěží doklad
+                    </div>
+
+                    <!-- Ikona -->
+                    <div class="absolute top-14 left-1/2 -translate-x-1/2">
+                        <div class="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center shadow-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Obsah -->
+                    <div class="flex-1 pt-36 text-center">
+                        <h3 class="text-2xl font-extrabold mb-4 text-white leading-tight">
+                            AI udělá práci za vás
+                        </h3>
+
+                        <p style="
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #fff;
+            margin: 0 0 2rem;
+        ">
+                            Umělá inteligence přečte dodavatele, datumy i částky. Vše je připravené k zaúčtování bez ruční práce.
+                        </p>
+                    </div>
+
+                    <!-- Číslo -->
+
+                    <div class="absolute left-1/2 -translate-x-1/2 bottom-[-2rem] bg-white text-[#006aff] w-20 h-20 flex items-center justify-center rounded-full shadow-2xl text-3xl font-extrabold ring-4 ring-white/50">
+                        02
+                    </div>
+                </div>
+
+                <!-- KROK 3 -->
+                <div class="relative bg-[#006aff] text-white p-6 rounded-tl-[1.5rem] rounded-tr-[1.5rem] rounded-bl-[1.5rem] rounded-br-none shadow-xl flex flex-col justify-between min-h-[360px]">
+
+                    <!-- Label vlevo nahoře -->
+                    <div class="absolute -top-5 -left-5 bg-[#508FFE] px-5 py-2.5 text-white text-xl font-extrabold tracking-wide rounded-br-lg shadow-md">
+                        Účetní pracuje
+                    </div>
+
+                    <!-- Ikona -->
+                    <div class="absolute top-14 left-1/2 -translate-x-1/2">
+                        <div class="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center shadow-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Obsah -->
+                    <div class="flex-1 pt-36 text-center">
+                        <h3 class="text-2xl font-extrabold mb-4 text-white leading-tight">
+                            Účetní má vše připravené
+                        </h3>
+
+                        <p style="
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #fff;
+            margin: 0 0 2rem;
+        ">
+                            Všechny doklady jsou ihned dostupné, roztříděné a připravené k zaúčtování. Už žádné nahánění papírů.
+                        </p>
+                    </div>
+
+                    <!-- Číslo -->
+
+                    <div class="absolute left-1/2 -translate-x-1/2 bottom-[-2rem] bg-white text-[#006aff] w-20 h-20 flex items-center justify-center rounded-full shadow-2xl text-3xl font-extrabold ring-4 ring-white/50">
+                        03
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-28 bg-gradient-to-b from-white via-[#f8fbff] to-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h1 class="h1-section_two text-center md:text-left" data-aos="fade-up">
+            Spojujeme podnikatele a účetní v jednom systému
+        </h1>
+
+        <p class="text-[1.5rem] text-gray-700 max-w-4xl mx-auto text-center mb-20 font-light" data-aos="fade-up" data-aos-delay="100">
+            Vytvořili jsme chytrý a jednoduchý způsob, jak podnikatelé snadno předají doklady a účetní je okamžitě vidí, roztříděné a připravené ke zpracování. Stačí k tomu tři jednoduché kroky.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Krok 1 -->
+            <div class="bg-[#edf5ff] shadow-lg p-8 text-center hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-col items-center mb-6">
+                    <div class="w-16 h-16 mb-2 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full">
+                        <!-- Ikona nahrání -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+                        </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#1a4eff] uppercase tracking-wide">Krok 1</div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Nahrajte doklady</h3>
+                <ul class="text-gray-700 text-[15px] space-y-3 text-left mx-auto max-w-xs">
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Nahrávání z mobilu, e-mailu nebo webu
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Bez nutnosti třídit či popisovat
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Okamžité uložení do systému
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Krok 2 -->
+            <div class="bg-[#edf5ff] shadow-lg p-8 text-center hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col items-center mb-6">
+                    <div class="w-16 h-16 mb-2 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full">
+                        <!-- Ikona AI -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 20l9-5-9-5-9 5 9 5z" />
+                            <path d="M12 12V4l9 5-9 5z" />
+                        </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#1a4eff] uppercase tracking-wide">Krok 2</div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">AI doklady vytěží</h3>
+                <ul class="text-gray-700 text-[15px] space-y-3 text-left mx-auto max-w-xs">
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Automatické rozpoznání dodavatele a částek
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Doplnění údajů a zařazení
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Není nutné nic přepisovat
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Krok 3 -->
+            <div class="bg-[#edf5ff] shadow-lg p-8 text-center hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex flex-col items-center mb-6">
+                    <div class="w-16 h-16 mb-2 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full">
+                        <!-- Ikona účetní -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M16 12A4 4 0 118 12a4 4 0 018 0z" />
+                            <path d="M12 14v7m4-3h-8" />
+                        </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#1a4eff] uppercase tracking-wide">Krok 3</div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Účetní má vše připravené</h3>
+                <ul class="text-gray-700 text-[15px] space-y-3 text-left mx-auto max-w-xs">
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Doklady se okamžitě zobrazí účetní
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Není nutné nic posílat ani volat
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Účetní má přehled bez zmatků
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-white py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <h1 class="h1-section_one"  data-aos="fade-up">
+            Spojujeme podnikatele a účetní v jednom systému
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+
+            <!-- Výhoda 1 -->
+            <div class="flex flex-col items-start">
+                <div class="text-blue-600 text-5xl font-bold mb-4">1</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Nahrajete doklady</h3>
+                <p class="text-gray-600">
+                    Mobilní a webová aplikace umožňují snadné nahrávání odkudkoli.
+                </p>
+            </div>
+
+            <!-- Výhoda 2 -->
+            <div class="flex flex-col items-start">
+                <div class="text-blue-600 text-5xl font-bold mb-4">2</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Automatické zařazení</h3>
+                <p class="text-gray-600">
+                    Každý doklad se automaticky zařadí, očísluje a připraví pro účetní.
+                </p>
+            </div>
+
+            <!-- Výhoda 3 -->
+            <div class="flex flex-col items-start">
+                <div class="text-blue-600 text-5xl font-bold mb-4">3</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Pořádek bez šanonů</h3>
+                <p class="text-gray-600">
+                    Vše na jednom místě, žádné ztracené účtenky, žádné šanony.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
 
 <section class="bg-white py-16 px-4">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -176,9 +949,58 @@
             <img src="assets/images/mockup.png" alt="Náhled aplikace" class="rounded-xl shadow-md max-w-full">
         </div>
     </div>
+
+    <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+        Nahrajete doklady, <br>
+        <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+    </h2>
+
+
+    <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+        Nahrajete doklady, <br>
+        <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+    </h2>
+
+    <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+        Nahrajete doklady, <br>
+        <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+    </h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>v            <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+    Nahrajete doklady, <br>
+    <span class="font-normal text-gray-700">o zbytek se postará účetní.</span>
+</h2>
 </section>
 
 
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1800,
+        once: true,
+    });
+</script>
 </body>
 </html>
