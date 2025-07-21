@@ -235,8 +235,8 @@
 <section class="relative bg-gradient-to-br from-white via-[#f2f7ff] to-white py-28 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-20">
 
-        <!-- Text vlevo -->
-        <div class="w-full lg:w-1/2 z-10">
+        <!-- Levá část s animací zleva -->
+        <div class="w-full lg:w-1/2 z-10" data-aos="fade-right" data-aos-duration="800">
             <h2 class="text-5xl font-extrabold text-[#006aff] leading-tight mb-6">
                 Chytrá fakturace<br>
                 s nulovou námahou
@@ -245,197 +245,43 @@
                 Vystav fakturu bez překlepů, odešli ji klientovi a dej účetnímu volné ruce. Systém se postará o zbytek.
             </p>
             <a href="#" class="inline-block bg-[#006aff] text-white px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-[#0051d4] transition">
-                Vyzkoušet vystavení faktury
+                Zobrazit vzor faktury
             </a>
         </div>
 
-        <!-- Pravá část: Kroky -->
+        <!-- Pravá část: Karty s animací shora -->
         <div class="w-full lg:w-1/2 relative space-y-12">
-            <!-- KROK 1 -->
-            <div class="flex items-start gap-6 group">
-                <div class="text-3xl font-bold text-[#cbd5e1] group-hover:text-[#006aff]">01</div>
+
+            <div class="card-step feature-card group flex items-start gap-6 transition-all duration-500 ease-in-out p-4 rounded-xl feature-card"
+                 data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
+                <div class="text-3xl font-bold text-[#006aff]">01</div>
                 <div>
-                    <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Automatické vyplnění</h3>
-                    <p class="text-gray-600 max-w-md text-sm">
-                        Faktura se předvyplní podle posledního dokladu nebo kontaktu. Méně práce, méně chyb.
+                    <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Jednoduché vyplnění</h3>
+                    <p class="text-[#1a1a1a] text-[1rem] font-light leading-relaxed max-w-sm">
+                        Faktura se vyplní za pár vteřin. Vše důležité doplní systém automaticky – bez zbytečné práce.
                     </p>
                 </div>
             </div>
 
-            <!-- KROK 2 -->
-            <div class="flex items-start gap-6 group">
-                <div class="text-3xl font-bold text-[#cbd5e1] group-hover:text-[#006aff]">02</div>
+            <div class="card-step feature-card group flex items-start gap-6 transition-all duration-800 ease-in-out p-4 rounded-xl feature-card"
+                 data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
+                <div class="text-3xl font-bold text-[#006aff]">02</div>
                 <div>
                     <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Odeslání jedním klikem</h3>
-                    <p class="text-gray-600 max-w-md text-sm">
-                        E-mail s QR kódem, archivace, tisk i export. Vše na jedno kliknutí – systém se postará.
+                    <p class="text-[#1a1a1a] text-[1rem] font-light leading-relaxed max-w-sm">
+                        E-mail s QR kódem, archivace, tisk i export. Vše na jedno kliknutí – systém se o vše postará.
                     </p>
                 </div>
             </div>
 
-            <!-- KROK 3 -->
-            <div class="flex items-start gap-6 group">
-                <div class="text-3xl font-bold text-[#cbd5e1] group-hover:text-[#006aff]">03</div>
+            <div class="card-step feature-card group flex items-start gap-6 transition-all duration-1100 ease-in-out p-4 rounded-xl feature-card"
+                 data-aos="fade-down" data-aos-delay="1100" data-aos-duration="800">
+                <div class="text-3xl font-bold text-[#006aff]">03</div>
                 <div>
                     <h3 class="text-xl font-semibold text-[#1a1a1a] mb-1">Párování a přehled</h3>
-                    <p class="text-gray-600 max-w-md text-sm">
-                        Notifikace, automatické párování plateb, přehled o zaplacených a nezaplacených fakturách.
+                    <p class="text-[#1a1a1a] text-[1rem] font-light leading-relaxed max-w-sm">
+                        Faktury se automaticky třídí podle stavu – vystavené, odeslané, po splatnosti i uhrazené. Vše přehledně, včas a bez ručního hlídání.
                     </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class="relative bg-gradient-to-br from-[#f8fbff] via-[#ecf3ff] to-[#ffffff] py-28 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-        <!-- LEVÁ STRANA -->
-        <div class="relative z-10" data-aos="fade-up">
-            <div class="mb-10">
-                <h2 class="text-5xl font-extrabold text-[#006aff] leading-tight mb-4">Chytrá fakturace</h2>
-                <p class="text-xl text-gray-700 font-light max-w-lg">
-                    Vystav fakturu bez překlepů, odešli ji klientovi a dej účetnímu volné ruce.
-                </p>
-            </div>
-
-            <!-- Faktura box -->
-            <div class="relative rounded-3xl overflow-hidden shadow-xl border border-[#d9e6ff] backdrop-blur-md bg-white/80">
-                <img src="/img/invoice.png" alt="Faktura"
-                     class="w-full h-auto object-contain transition-transform duration-300 hover:scale-[1.015]" />
-                <!-- Glow overlay -->
-                <div class="absolute inset-0 bg-black/5 pointer-events-none"></div>
-            </div>
-        </div>
-
-        <!-- PRAVÁ STRANA – body -->
-        <div class="space-y-12" data-aos="fade-up" data-aos-delay="150">
-            <!-- Item 1 -->
-            <div class="flex items-start gap-4">
-                <div class="p-3 bg-[#006aff]/10 rounded-xl shadow-md">
-                    <i data-lucide="file-text" class="w-6 h-6 text-[#006aff]"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-[#006aff] mb-1">Automatické vyplnění</h3>
-                    <p class="text-gray-700 text-lg font-light max-w-md">
-                        Faktura se předvyplní podle posledního dokladu nebo kontaktu.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="flex items-start gap-4">
-                <div class="p-3 bg-[#006aff]/10 rounded-xl shadow-md">
-                    <i data-lucide="send" class="w-6 h-6 text-[#006aff]"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-[#006aff] mb-1">Odeslání na klik</h3>
-                    <p class="text-gray-700 text-lg font-light max-w-md">
-                        Odešli fakturu e-mailem s QR kódem. Systém ji i archivuje.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="flex items-start gap-4">
-                <div class="p-3 bg-[#006aff]/10 rounded-xl shadow-md">
-                    <i data-lucide="check-circle" class="w-6 h-6 text-[#006aff]"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-[#006aff] mb-1">Přehled o platbách</h3>
-                    <p class="text-gray-700 text-lg font-light max-w-md">
-                        Sleduj, kdo zaplatil. Upozornění i párování plateb je automatické.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-
-
-
-
-
-<section class="relative py-32 bg-[#002f47] text-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-5xl font-extrabold text-center mb-20 leading-tight">
-            Jak funguje chytrá fakturace
-        </h2>
-
-        <div class="relative grid gap-24 md:grid-cols-1 lg:grid-cols-1">
-
-            <!-- Krok 1 -->
-            <div class="relative pl-20">
-                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">01</span>
-                <div class="flex items-start gap-6">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
-                        🧾
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Vyplnění bez práce</h3>
-                        <p class="text-white/80 text-lg font-light max-w-2xl">
-                            Faktura se předvyplní podle dřívějších údajů nebo kontaktu. Bez přepisování, bez chyb.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Krok 2 -->
-            <div class="relative pl-20">
-                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">02</span>
-                <div class="flex items-start gap-6">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
-                        📩
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Odeslání a upozornění</h3>
-                        <p class="text-white/80 text-lg font-light max-w-2xl">
-                            Odeslání faktury klientovi jedním klikem. E-mailem, s QR kódem i notifikací.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Krok 3 -->
-            <div class="relative pl-20">
-                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">03</span>
-                <div class="flex items-start gap-6">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
-                        🔗
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Účetní ji má ihned</h3>
-                        <p class="text-white/80 text-lg font-light max-w-2xl">
-                            Faktura se automaticky zobrazí účetní. Nemusíte nic posílat ani řešit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Krok 4 -->
-            <div class="relative pl-20">
-                <span class="absolute left-0 top-2 text-5xl font-extrabold text-white/10 select-none">04</span>
-                <div class="flex items-start gap-6">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white text-2xl">
-                        📊
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Párování plateb</h3>
-                        <p class="text-white/80 text-lg font-light max-w-2xl">
-                            Platby se párují automaticky podle účtu. Upozornění na neuhrazené faktury přichází včas.
-                        </p>
-                    </div>
                 </div>
             </div>
 
