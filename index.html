@@ -3,35 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Title</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mine.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <script src="js/cube.js"></script>
+    <script src="js/menu.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-
 </head>
 <body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var header = document.querySelector("[data-header]");
-        if (!header) return;
 
-        function toggleScrollClass() {
-            if ((window.scrollY || window.pageYOffset) >= 50) {
-                header.classList.add("is-scroll");
-            } else {
-                header.classList.remove("is-scroll");
-            }
-        }
 
-        toggleScrollClass();
-        window.addEventListener("scroll", toggleScrollClass);
-    });
-</script>
+<!-- ================= HORNÍ MENU APLIKACE - ZKOPČENO Z ORIGINÁLU ======================================== -->
 <div class="micropage micropage__header" data-header="">
     <div class="container container--header">
         <div class="micropage__header__wrapper">
@@ -64,6 +48,8 @@
         </div>
     </div>
 </div>
+
+<!-- ================= HERO SEKCE MALINKO UPRAVENÁ S LEPŠÍM EFEKTEM  ======================================== -->
 
 <section class="fullscreen-section" style="
     position: relative;
