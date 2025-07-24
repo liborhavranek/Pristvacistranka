@@ -538,18 +538,22 @@
 
 
 
+
+
+
+
 <section class="w-full bg-white py-14 text-gray-800">
     <div class="max-w-7xl mx-auto px-6">
 
+        <!-- Nadpis -->
         <h1 class="text-5xl font-extrabold text-[#006aff] text-center md:text-left mb-6" data-aos="fade-down">
             Cenové balíčky
         </h1>
-
         <p class="text-xl text-black max-w-4xl mx-auto text-center mb-12 font-light" data-aos="fade-up" data-aos-delay="100">
             Podívejte se na naše cenové balíčky a vyberte si ten, který vám nejlépe vyhovuje.
         </p>
 
-        <!-- Frekvence -->
+        <!-- Přepínače -->
         <div class="flex justify-center mb-12 space-x-4">
             <button class="bg-blue-50 hover:bg-blue-100 text-blue-700 px-8 py-3 rounded-full text-base font-medium transition">Roční</button>
             <button class="bg-blue-50 hover:bg-blue-100 text-blue-700 px-8 py-3 rounded-full text-base font-medium transition">Čtvrtletní</button>
@@ -557,22 +561,130 @@
         </div>
 
         <!-- Karty -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Zdarma -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-md flex flex-col items-center text-center">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600">Zdarma</h3>
-                <p class="text-4xl font-extrabold mb-4 text-gray-900">0 Kč</p>
-                <ul class="space-y-2 text-sm mb-6 text-gray-600 font-light">
-                    <li>✅ 5 GB úložiště</li>
-                    <li>✅ 3 uživatelé</li>
-                    <li>✅ 20 dokumentů měsíčně</li>
-                    <li>✅ Základní vytěžování</li>
+        <div class="relative grid grid-cols-1  py-14 md:grid-cols-3 gap-8 items-stretch">
+
+            <!-- Zdarma karta -->
+            <div class="relative z-0 bg-white rounded-3xl p-8 shadow-[0_6px_16px_rgba(0,0,0,0.08)] flex flex-col text-left border border-[#e2e8f0] scale-95 md:translate-x-12 md:-translate-y-4 font-sans">
+
+                <!-- Ikona nahoře -->
+                <div class="w-20 h-20 rounded-full bg-[#006aff] flex items-center justify-center mb-4">
+                    <svg height="45" width="45" viewBox="0 0 512 512" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path class="st0" d="M512,255.993l-63.304-51.63l28.999-76.354l-80.635-13.07l-13.063-80.635L307.63,63.311L256,0.013l-7.862,9.64
+		l-43.78,53.658L128.01,34.305l-13.076,80.635l-80.622,13.07l28.993,76.354L0,255.993l63.305,51.636l-28.993,76.361l80.622,13.076
+		l13.07,80.629l76.354-29L256,511.987l51.63-63.292l76.367,29l13.063-80.629l80.642-13.076l-29.006-76.361L512,255.993z
+		 M449.885,367.935l-70.52,11.437l-11.424,70.514l-66.786-25.366L256,479.882l-45.168-55.363l-66.773,25.366l-11.431-70.514
+		l-70.513-11.43l25.358-66.793L32.118,256l55.356-45.155l-25.358-66.78l70.513-11.43l11.431-70.514l66.773,25.359L256,32.125
+		l45.155,55.356l66.786-25.366l11.424,70.52l70.52,11.43l-25.359,66.78L479.882,256l-55.356,45.148L449.885,367.935z"/>
+                            <path class="st0" d="M165.87,268.515l-30.677,6.858c-0.509,0.118-0.813-0.08-0.926-0.582l-4.024-17.985
+		c-0.112-0.502,0.079-0.806,0.588-0.918l36.842-8.246c0.747-0.165,1.136-0.786,0.972-1.539l-3.013-13.453
+		c-0.165-0.753-0.786-1.143-1.526-0.978l-54.828,12.263c-0.754,0.172-1.149,0.793-0.978,1.546l18.567,82.988
+		c0.172,0.753,0.786,1.137,1.546,0.965l15.963-3.568c0.753-0.171,1.143-0.779,0.971-1.532l-7.202-32.191
+		c-0.112-0.502,0.086-0.813,0.594-0.926l30.677-6.864c0.754-0.165,1.144-0.786,0.972-1.539l-2.98-13.328
+		C167.238,268.732,166.624,268.343,165.87,268.515z"/>
+                            <path class="st0" d="M238.464,267.853c8.497-6.264,12.336-16.234,9.891-27.169c-3.488-15.594-17.502-23.945-34.986-20.033
+		l-34.067,7.624c-0.753,0.165-1.15,0.78-0.978,1.54l18.566,82.981c0.172,0.753,0.786,1.143,1.546,0.978l15.964-3.574
+		c0.753-0.172,1.143-0.786,0.971-1.539l-6.838-30.553c-0.106-0.502,0.086-0.812,0.595-0.925l11.437-2.557l21.718,28.015
+		c0.568,0.8,1.037,1.091,2.167,0.839l17.859-4.003c0.879-0.192,1.077-1.031,0.542-1.705L238.464,267.853z M220.697,258.094
+		l-15.084,3.377c-0.509,0.112-0.819-0.086-0.932-0.589l-4.414-19.742c-0.112-0.502,0.079-0.807,0.588-0.919l15.084-3.376
+		c7.043-1.579,12.501,1.553,13.935,7.975C231.335,251.355,227.741,256.515,220.697,258.094z"/>
+                            <path class="st0" d="M328.126,267.986l-36.842,8.246c-0.503,0.112-0.807-0.079-0.926-0.588l-3.964-17.727
+		c-0.112-0.502,0.079-0.807,0.581-0.925l30.685-6.858c0.753-0.172,1.15-0.793,0.978-1.546l-2.98-13.321
+		c-0.172-0.76-0.793-1.15-1.546-0.978l-30.678,6.859c-0.502,0.118-0.806-0.08-0.925-0.582l-3.793-16.974
+		c-0.112-0.502,0.08-0.812,0.582-0.918l36.842-8.246c0.746-0.172,1.137-0.786,0.971-1.539l-3.013-13.452
+		c-0.165-0.76-0.786-1.143-1.526-0.978l-54.828,12.263c-0.753,0.172-1.15,0.786-0.978,1.539l18.566,82.988
+		c0.172,0.753,0.787,1.143,1.547,0.971l54.82-12.263c0.747-0.165,1.137-0.786,0.965-1.54l-3.007-13.452
+		C329.487,268.211,328.872,267.82,328.126,267.986z"/>
+                            <path class="st0" d="M399.141,252.102l-36.836,8.24c-0.502,0.112-0.812-0.086-0.925-0.588l-3.964-17.728
+		c-0.112-0.502,0.086-0.812,0.588-0.918l30.671-6.872c0.767-0.165,1.15-0.78,0.984-1.533l-2.98-13.334
+		c-0.172-0.753-0.786-1.142-1.546-0.978l-30.678,6.872c-0.502,0.106-0.807-0.086-0.919-0.588l-3.799-16.974
+		c-0.112-0.502,0.079-0.806,0.582-0.925l36.835-8.24c0.767-0.172,1.156-0.786,0.991-1.539l-3.013-13.452
+		c-0.172-0.76-0.78-1.15-1.546-0.978l-54.814,12.263c-0.753,0.171-1.15,0.786-0.978,1.539l18.566,82.988
+		c0.172,0.753,0.786,1.143,1.54,0.972l54.814-12.263c0.766-0.172,1.156-0.786,0.984-1.54l-3.013-13.452
+		C400.522,252.32,399.908,251.93,399.141,252.102z"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Label -->
+                <div class="inline-flex items-center justify-center px-4 py-1 bg-[#006aff] text-[#ffffff] rounded-full text-base md:text-lg font-semibold uppercase tracking-wide mb-4 shadow-sm" style="font-family: var(--font-heading); max-width: fit-content;">
+                    Základní tarif
+                </div>
+
+                <!-- Cena -->
+                <p class="text-4xl font-extrabold text-gray-900 mb-2" style="font-family: var(--font-heading);">0 Kč</p>
+
+                <!-- Popis -->
+                <p class="text-md text-gray-800 mb-6 max-w-xs" style="font-family: var(--font-body);">
+                    Ideální pro začínající podnikatele nebo malé týmy, kteří chtějí vyzkoušet výhody systému.
+                </p>
+
+                <!-- Vlastnosti -->
+                <ul class="space-y-4 text-[1.125rem] text-gray-800 mb-8 w-full" style="font-family: var(--font-body);">
+                    <li class="flex items-center gap-3">
+    <span class="w-8 h-8 flex items-center justify-center bg-[#006aff] text-[#ffffff] rounded-full">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+                        1 GB úložiště
+                    </li>
+                    <li class="flex items-center gap-3">
+    <span class="w-8 h-8 flex items-center justify-center bg-[#006aff] text-[#ffffff] rounded-full">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+                        Přístup pro 1 uživatele
+                    </li>
+                    <li class="flex items-center gap-3">
+    <span class="w-8 h-8 flex items-center justify-center bg-[#006aff] text-[#ffffff] rounded-full">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+                        20 dokumentů k vytěžení
+                    </li>
+
+                    <li class="flex items-center gap-3">
+    <span class="w-8 h-8 flex items-center justify-center bg-[#006aff] text-[#ffffff] rounded-full">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+                        Vystavování a evidence faktur
+                    </li>
+
+
+                    <li class="flex items-center gap-3">
+    <span class="w-8 h-8 flex items-center justify-center bg-[#006aff] text-[#ffffff] rounded-full">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+                        Adresář s 5 kontakty
+                    </li>
+
+                    <li class="flex items-center gap-3">
+    <span class="w-8 h-8 flex items-center justify-center bg-[#006aff] text-[#ffffff] rounded-full">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+                        Mobilní aplikace
+                    </li>
                 </ul>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">Vybrat zdarma</button>
+
+                <!-- Tlačítko -->
+                <a href="#" class="inline-block bg-[#006aff] text-white px-6 py-3 rounded-full text-base font-semibold shadow hover:bg-[#0051d4] transition" style="font-family: var(--font-heading); max-width: fit-content;">
+                    Vyzkoušet zdarma
+                </a>
             </div>
-            <!-- Betaverze -->
-            <div class="bg-blue-600 text-white rounded-2xl p-8 shadow-xl flex flex-col items-center text-center scale-105 border-4 border-blue-700">
-                <h3 class="text-2xl font-semibold mb-2">Tarif Betaverze</h3>
+
+
+            <!-- Tarif Betaverze (modrá, vyšší) -->
+            <div class="relative z-10 bg-[#006aff] text-white rounded-3xl px-10 py-20 shadow-[0_24px_64px_rgba(0,108,255,0.35)] flex flex-col items-center text-center scale-105 border border-[#0050cc] -mt-6 -mb-6">
+                <h3 class="text-lg font-bold uppercase tracking-wide mb-2">Tarif Betaverze</h3>
                 <p class="text-4xl font-extrabold mb-1">10 000 Kč</p>
                 <p class="text-sm text-blue-100 mb-4">Nejlepší tarif na Dokladuj.to</p>
                 <ul class="space-y-2 text-sm mb-6">
@@ -581,28 +693,26 @@
                     <li>✅ 500 dokumentů měsíčně</li>
                     <li>✅ Pokročilé vytěžování</li>
                 </ul>
-                <button class="bg-white text-blue-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Objednat tarif</button>
+                <button class="bg-white text-[#006aff] px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Objednat tarif</button>
             </div>
 
-            <!-- Individuální -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-md flex flex-col items-center text-center">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600">Individuální</h3>
-                <p class="text-4xl font-extrabold mb-4 text-gray-900">Na míru</p>
-                <ul class="space-y-2 text-sm mb-6 text-gray-600 font-light">
+            <!-- Individuální karta -->
+            <div class="relative z-0 bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-[0_6px_16px_rgba(0,0,0,0.05)] flex flex-col items-center text-center border border-[#e2e8f0] scale-95 md:-translate-x-12 md:-translate-y-4">
+                <h3 class="text-lg font-bold uppercase text-[#006aff] tracking-wide mb-2">Individuální</h3>
+                <p class="text-4xl font-extrabold text-gray-900 mb-1">Na míru</p>
+                <p class="text-sm text-gray-500 mb-4">Tarif pro firmy s vyššími nároky</p>
+                <ul class="space-y-2 text-sm text-gray-700 mb-6">
                     <li>✅ Více než 5000 dokladů</li>
                     <li>✅ Více než 50 uživatelů</li>
                     <li>✅ Vlastní API integrace</li>
                     <li>✅ Individuální přístup</li>
                 </ul>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">Kontaktujte nás</button>
+                <button class="bg-[#006aff] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#0050cc] transition">Kontaktujte nás</button>
             </div>
+
         </div>
     </div>
 </section>
-
-
-
-
 
 
 
