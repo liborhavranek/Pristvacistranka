@@ -210,3 +210,25 @@ margin: 0 0 1.2rem;
     0% { transform: translateX(-50%); }
     100% { transform: translateX(0); }
 }
+
+
+.micropage__slider__button{
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;         /* ne 100% */
+    min-width: 0 !important;
+    padding: 20px 30px !important;  /* normální velikost */
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 9999px;          /* pilulka */
+    white-space: nowrap;            /* jeden řádek */
+}
+
+
+
+@keyframes breathe {
+    0%, 100% { opacity: .9; transform: scale(1); }
+    50%      { opacity: 1;  transform: scale(1.03); }
+}
+.halo-animate { animation: breathe 8s ease-in-out infinite; }

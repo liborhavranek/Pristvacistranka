@@ -1,0 +1,61 @@
+<section id="stats-section" class="relative w-full bg-fixed bg-center bg-cover py-24" style="background-image: url('/img/img-slider-bg.png');">
+    <div class="absolute inset-0 bg-[rgba(0,108,255,0.55)] z-0"></div>
+
+    <div class="relative z-10 w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-white text-center divide-x divide-white/30">
+            <div class="px-4 py-12">
+                <div class="text-5xl font-extrabold count-up" data-count="1425000">0</div>
+                <div class="mt-2 text-2xl font-light">Vytěžených dokumentů</div>
+            </div>
+            <div class="px-4 py-12">
+                <div class="text-5xl font-extrabold count-up" data-count="218000">0</div>
+                <div class="mt-2 text-2xl font-light">Vystavených faktur</div>
+            </div>
+            <div class="px-4 py-12">
+                <div class="text-5xl font-extrabold count-up" data-count="512">0</div>
+                <div class="mt-2 text-2xl font-light">Aktivních firem</div>
+            </div>
+            <div class="px-4 py-12">
+                <div class="text-5xl font-extrabold count-up" data-count="5" data-suffix=" min">0</div>
+                <div class="mt-2 text-2xl font-light">Průměrná doba vytěžení 100 dokladů</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    function animateCountUp(el) {
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        const suffix = el.getAttribute('data-suffix') || '+';
+        let current = 0;
+        const duration = 1500;
+        const startTime = performance.now();
+
+        function update(timestamp) {
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            const value = Math.floor(progress * target);
+            el.textContent = value.toLocaleString('cs-CZ') + suffix;
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            }
+        }
+
+        requestAnimationFrame(update);
+    }
+
+    // Aktivace při scrollu pomocí IntersectionObserver
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const section = entry.target;
+                section.querySelectorAll('.count-up').forEach(el => animateCountUp(el));
+                obs.unobserve(section); // Spustí se jen jednou
+            }
+        });
+    }, { threshold: 0.5 }); // Spustí se když je sekce z poloviny ve viewportu
+
+    observer.observe(document.querySelector('#stats-section'));
+</script>

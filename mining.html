@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vytěžování dokladů | Dokladuj.to</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mine.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+  <script src="js/cube.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HORNÍ MENU APLIKACE - ZKOPČENO Z ORIGINÁLU ======================================== -->
+<div class="micropage micropage__header" data-header="">
+  <div class="container container--header">
+    <div class="micropage__header__wrapper">
+      <div class="micropage__header__logo">
+        <a href="./">
+          <img src="https://beta.dokladujto.cz/assets/theme/img/logo/logo.svg?v=2025071845548" alt="logo">
+        </a>
+      </div>
+      <nav class="micropage__header__nav" data-nav="">
+        <ul>
+          <li>
+            <a href="/Pristvacistranka/o_aplikaci.html" data-anchor-src="about">O aplikaci</a>
+          </li>
+
+          <li>
+            <a href="/Pristvacistranka/cesta.html" data-anchor-src="about">Naše cesta</a>
+          </li>
+
+          <li>
+            <a href="#about" data-anchor-src="about">Kontakt</a>
+          </li>
+        </ul>
+        <div class="micropage__header__buttons">
+          <a class="btn btn-bordered micropage__header__button" href="https://beta.dokladujto.cz/prihlaseni">
+            Přihlásit se
+          </a>
+          <a class="btn btn-primary micropage__header__button" href="https://beta.dokladujto.cz/registrace">
+            Vyzkoušet zdarma
+          </a>
+        </div>
+        <div class="micropage__header__contacts">
+          <a class="micropage__header__contact micropage__header__contact--email" href="mailto:lukas.hejkrlik@benecb.cz">lukas.hejkrlik@benecb.cz</a>
+          <a class="micropage__header__contact micropage__header__contact--phone" href="tel:+420 607 909 093">+420 607 909 093</a>
+        </div>
+        <div class="micropage__header__socials">
+        </div>
+      </nav>
+      <button class="micropage__header__ham" data-ham=""></button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============== OBSAH STRÁNKY (Vytěžování) ============== -->
+<section id="article" class="relative py-4 md:py-20 overflow-hidden">
+  <!-- Jemné „halo“ pozadí přes téměř celou sekci -->
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute inset-0 bg-[radial-gradient(2000px_1100px_at_50%_-260px,rgba(0,106,255,0.13)_0%,rgba(0,106,255,0.07)_42%,transparent_80%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(1300px_720px_at_15%_340px,rgba(0,106,255,0.06)_0%,transparent_72%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(1300px_720px_at_85%_340px,rgba(0,106,255,0.06)_0%,transparent_72%)]"></div>
+  </div>
+
+
+
+  <!-- Zpět na hlavní stránku (kompaktně vlevo nahoře) -->
+  <div class="mb-2 ml-8">
+    <nav class="absolute left-4 top-4 md:left-6 md:top-6 z-20" aria-label="breadcrumb">
+      <ol class="hidden md:flex items-center gap-2 text-[15px] text-[#0f172a]/60">
+        <li>
+          <a href="index.html" class="inline-flex items-center gap-1.5 text-[#006aff] hover:underline underline-offset-4">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5.5a1 1 0 0 1-1-1v-5.5h-3V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-10.5z"/>
+            </svg>
+            Domů
+          </a>
+        </li>
+        <li class="select-none">/</li>
+        <li class="text-[#0f172a]">Vytěžování</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="relative max-w-[72rem] mx-auto px-4 sm:px-6">
+
+    <!-- HERO -->
+    <header class="text-center mb-12">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+        <span class="text-[#006aff]">Vytěžování dokladů</span> s AI
+      </h1>
+      <h2 class="mt-3 text-2xl md:text-3xl font-extrabold text-[#0f172a]">
+        Přesné rozpoznání, validace chyb a příprava k zaúčtování
+      </h2>
+      <p class="mt-4 text-[18px] md:text-[20px] text-[#0f172a]/80 max-w-3xl mx-auto leading-relaxed">
+        Naskenujte, nahrajte a nechte systém vyčíst dodavatele, částky, DPH i platební údaje.
+        Chyby zvýrazníme, správné údaje předvyplníme a vy jen schválíte.
+      </p>
+    </header>
+
+    <!-- OBSAH – článkový layout -->
+    <article class="space-y-16">
+
+      <!-- 1) Jak vytěžování funguje -->
+      <section class="space-y-6">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-[#0f172a]">Jak vytěžování funguje</h3>
+        <p class="text-[17px] text-[#0f172a]/85">
+          Každý doklad projde rozpoznáním textu a extrakcí klíčových polí. Učíme se z vašich korekcí,
+          takže přesnost s časem roste a manuální práce klesá.
+        </p>
+
+        <!-- Levá: text • pravá: obrázek -->
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+            <h4 class="text-2xl md:text-3xl font-extrabold text-[#0f172a]">Od OCR k strukturovaným datům</h4>
+            <p class="mt-3 text-[17px] text-[#0f172a]/85">
+              Získáme dodavatele, IČO/DIČ, variabilní symbol, datumy, částky, rozpad DPH i číslo účtu/IBAN.
+              Vše uložíme k dokladu a připravíme pro schválení.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Podpora PDF, fotek i vícestránkových dokumentů.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Rozlišení typu dokladu (faktura, účtenka, zálohová…)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Učení na vašich datech – čím více používáte, tím chytřejší.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-5">
+            <figure>
+              <div class="rounded-2xl overflow-hidden ring-1 ring-[#cfe1ff] bg-white">
+                <!-- ilustrační obrázek ponechán -->
+                <img src="img/documents.svg" alt="AI vytěžování dokladů" class="w-full h-auto">
+              </div>
+              <figcaption class="mt-2 text-sm text-[#0f172a]/60">Z dokladů získáme strukturovaná data připravená ke schválení.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Tip box -->
+        <div class="mt-6 rounded-2xl bg-[#eef5ff] ring-1 ring-[#cfe1ff] p-5">
+          <p class="text-[16.5px] text-[#0f172a]">
+            <strong>Tip:</strong> Přidejte při nahrání štítky (pobočka, projekt, nákladové středisko).
+            Urychlíte schvalování i pozdější dohledání.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2) Validace a rychlé opravy -->
+      <section class="space-y-6">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-[#0f172a]">Validace a rychlé opravy</h3>
+        <p class="text-[17px] text-[#0f172a]/85">
+          Kontrolujeme vazby mezi částkami, DPH, variabilním symbolem a bankovním účtem. Při nesouladu
+          dostanete jasnou hlášku a návrh opravy – bez lovení informací v e-mailech.
+        </p>
+
+        <!-- Pravá: text • levá: obrázek -->
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <figure>
+              <div class="rounded-2xl overflow-hidden ring-1 ring-[#cfe1ff] bg-white">
+                <!-- ilustrační obrázek ponechán -->
+                <img src="img/documents.svg" alt="Validace a opravy" class="w-full h-auto">
+              </div>
+              <figcaption class="mt-2 text-sm text-[#0f172a]/60">Chyby zvýrazníme, správné hodnoty navrhneme.</figcaption>
+            </figure>
+          </div>
+          <div class="lg:col-span-7 order-1 lg:order-2">
+            <h4 class="text-2xl md:text-3xl font-extrabold text-[#0f172a]">Chytré kontroly &amp; upozornění</h4>
+            <p class="mt-3 text-[17px] text-[#0f172a]/85">
+              Validujeme sazby, součet řádků, formát VS, IBAN a další náležitosti. Upozornění dostanete do aplikace
+              i e-mailem – stačí potvrdit správnou variantu.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Předvyplnění polí s možností jedním klikem přepsat.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Historie úprav (audit log) pro kontrolu a dohledatelnost.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Učení z oprav – příště navrhneme správnou hodnotu automaticky.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3) Připraveno k zaúčtování & spolupráce -->
+      <section class="space-y-6">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-[#0f172a]">Připraveno k zaúčtování</h3>
+        <p class="text-[17px] text-[#0f172a]/85">
+          Jakmile jsou data kompletní, doklad projde schválením a je připravený k exportu do účetního systému
+          nebo k párování s bankou. Role a oprávnění zajistí hladkou spolupráci s účetními.
+        </p>
+
+        <!-- Levá: text • pravá: obrázek -->
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+            <h4 class="text-2xl md:text-3xl font-extrabold text-[#0f172a]">Workflow, role a exporty</h4>
+            <p class="mt-3 text-[17px] text-[#0f172a]/85">
+              Nastavte schvalovací kroky, přiřazujte odpovědné osoby a exportujte schválené doklady do účetnictví.
+              Vše na jednom místě – bez zbytečných e-mailových vláken.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Role (zaměstnanec / schvalovatel / účetní) a práva k dokladům.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Napojení na banku a párování plateb, přehled cash-flow.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-[7px] inline-block w-2.5 h-2.5 rounded-full bg-[#006aff]"></span>
+                <span>Exporty a importy pro účetní systémy + auditní stopa.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-5">
+            <figure>
+              <div class="rounded-2xl overflow-hidden ring-1 ring-[#cfe1ff] bg-white">
+                <!-- ilustrační obrázek ponechán -->
+                <img src="img/documents.svg" alt="Schvalování a export" class="w-full h-auto">
+              </div>
+              <figcaption class="mt-2 text-sm text-[#0f172a]/60">Schválené doklady exportujete do účetnictví bez ručního přepisu.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </div>
+</section>
+
+<!-- Patička stránky -->
+<div class="micropage micropage__footer">
+  <div class="container container--footer">
+    <div class="micropage__footer__wrapper">
+      <div class="micropage__footer__block micropage__footer__block--logo">
+        <div class="micropage__footer__logo">
+          <a href="./">
+            <img src="https://beta.dokladujto.cz/assets/theme/img/logo/logo.svg?v=2025090965630" alt="logo">
+          </a>
+          <div class="micropage__footer__buttons">
+            <a class="micropage__footer__button micropage__footer__button--app-store" href="https://apps.apple.com/tt/app/dokladuj-to/id1624698344" target="_blank"></a>
+            <a class="micropage__footer__button micropage__footer__button--google-play" href="https://play.google.com/store/apps/details?id=com.dms.dokladuj.to" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      <div class="micropage__footer__block micropage__footer__block--menu">
+        <h2>Aplikace</h2>
+        <ul>
+          <li><a href="https://app.dokladujto.cz/podpora" class="">Podpora</a></li>
+          <li><a href="https://app.dokladujto.cz/kontakt" class="">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="micropage__footer__block micropage__footer__block--menu">
+        <h2>Společnost</h2>
+        <ul>
+          <li><a href="https://app.dokladujto.cz/o-spolecnosti" class="">O nás</a></li>
+          <li><a href="https://app.dokladujto.cz/zasady-ochrany-osobnich-udaju" class="">Zásady ochrany osobních údajů</a></li>
+        </ul>
+      </div>
+      <div class="micropage__footer__block micropage__footer__block--contact">
+        <h2>Kontakt</h2>
+        <div class="micropage__footer__contacts">
+          <a class="micropage__footer__contact micropage__footer__contact--email" href="mailto:lukas.hejkrlik@benecb.cz">lukas.hejkrlik@benecb.cz</a>
+          <a class="micropage__footer__contact micropage__footer__contact--phone" href="tel:+420 607 909 093">+420 607 909 093</a>
+        </div>
+        <div class="micropage__footer__socials"></div>
+      </div>
+    </div>
+    <div class="micropage__footer__bottom">
+      <div class="micropage__footer__copyright">
+        <p>© 2025 BENE CB spol. s r.o. Všechna práva vyhrazena.</p>
+      </div>
+      <div class="micropage__footer__menu">
+        <ul>
+          <li><a href="https://app.dokladujto.cz/informace-o-cookies" class="">Informace o cookies</a></li>
+          <li><a href="https://app.dokladujto.cz/zasady-ochrany-osobnich-udaju" class="">Zásady ochrany osobních údajů</a></li>
+        </ul>
+      </div>
+      <div class="micropage__footer__author">
+        <p>Webdesign <a href="https://www.nexgen.cz" title="NexGen IT, s.r.o. - Webdesign, SEO, 3D grafika, Vizualizace, DTP, České Budějovice" target="_blank">NexGen IT, s.r.o.</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
