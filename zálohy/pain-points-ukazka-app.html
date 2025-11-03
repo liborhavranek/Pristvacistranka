@@ -1,0 +1,220 @@
+
+
+<section id="pain-points" class="relative bg-white pt-28">
+    <!-- pozadí -->
+    <div class="pointer-events-none absolute inset-0 -z-0">
+        <div class="absolute inset-0 halo-animate bg-[radial-gradient(1400px_820px_at_50%_-260px,rgba(0,106,255,0.25)_0%,rgba(0,106,255,0.10)_38%,transparent_72%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_15%_240px,rgba(0,106,255,0.14)_0%,transparent_70%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_85%_240px,rgba(0,106,255,0.14)_0%,transparent_70%)]"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-3 sm:px-5 lg:px-6">
+        <!-- Header -->
+        <header class="text-center mb-10 md:mb-14">
+            <h2 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                <span class="text-[#006aff]">Známé starosti</span>
+                <span class="block text-slate-900">podnikatelů s&nbsp;účetnictvím</span>
+            </h2>
+            <p class="mt-3 text-[18px] md:text-[22px] lg:text-[24px] font-medium text-slate-700 max-w-3xl mx-auto leading-relaxed">
+                Každý měsíc se ztrácí hodiny času kvůli papírování, e-mailům a&nbsp;neustálému přepisování dokladů.
+            </p>
+        </header>
+
+        <!-- PŘEPÍNAČE VE STYLU CTA -->
+        <div id="ppTabs" class="mb-8 flex flex-wrap justify-center gap-3" role="tablist" aria-label="Problémy">
+            <!-- aktivní = plná modrá, neaktivní = ghost/outline -->
+            <button class="pp-tab is-active" data-key="lost" role="tab" aria-selected="true">
+                <span class="pp-tab-label">Doklady v&nbsp;e-mailech</span>
+                <span class="pp-tab-progress"></span>
+            </button>
+            <button class="pp-tab" data-key="excel" role="tab" aria-selected="false">
+                <span class="pp-tab-label">Faktury v&nbsp;Excelu</span>
+                <span class="pp-tab-progress"></span>
+            </button>
+            <button class="pp-tab" data-key="comm" role="tab" aria-selected="false">
+                <span class="pp-tab-label">Komunikace s&nbsp;účetní</span>
+                <span class="pp-tab-progress"></span>
+            </button>
+        </div>
+
+        <!-- PANEL -->
+        <div class="rounded-3xl overflow-hidden bg-white/90 ring-1 ring-slate-200 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                <!-- Foto -->
+                <div class="lg:col-span-6">
+                    <div class="relative aspect-[16/10] lg:aspect-auto lg:h-full">
+                        <img id="ppImage" src="img/chaos1.jpg" alt="Ztracené doklady" class="absolute inset-0 size-full object-cover transition duration-500 ease-out" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-slate-900/10 to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="lg:col-span-6 p-7 lg:p-10">
+                    <h3 id="ppTitle" class="text-[22px] md:text-[26px] lg:text-[28px] font-extrabold text-slate-900">
+                        Doklady ztracené v&nbsp;e-mailech nebo peněžence
+                    </h3>
+
+                    <div id="ppTags" class="mt-3 flex flex-wrap gap-2">
+                        <span class="pp-tag"><i class="pp-dot bg-[#006aff]"></i>Ztráta času</span>
+                        <span class="pp-tag"><i class="pp-dot bg-[#006aff]"></i>Chaotické dohledávání</span>
+                    </div>
+
+                    <ul id="ppList" class="mt-5 space-y-3 text-slate-700 leading-relaxed">
+                        <li class="pp-li"><span class="pp-bullet bg-[#006aff]"></span><span>Účtenky roztroušené v&nbsp;e-mailech a&nbsp;chatech</span></li>
+                        <li class="pp-li"><span class="pp-bullet bg-[#006aff]"></span><span>Zdlouhavé dohledávání a&nbsp;přepisování údajů</span></li>
+                        <li class="pp-li"><span class="pp-bullet bg-[#006aff]"></span><span>Nejasné, co už bylo předáno účetní</span></li>
+                        <li class="pp-li"><span class="pp-bullet bg-[#006aff]"></span><span>Duplicity a&nbsp;chybějící souvislosti u dokladů</span></li>
+                    </ul>
+
+                    <div class="mt-8">
+                        <a href="#solutions" class="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-[17px] font-semibold text-white bg-[#006aff]
+              hover:bg-[#045fe0] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#006aff]/30 transition">
+                            Jak to řešíme
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STYLY -->
+    <style>
+        :root { --ppDur: 5200ms; }
+
+        /* ===== Tabs = CTA-styl (jako „Jak to řešíme“) ===== */
+        .pp-tab{
+            position:relative; display:inline-flex; align-items:center; justify-content:center;
+            padding:.75rem 1.25rem; border-radius: .875rem;
+            font-weight:700; font-size:15px; line-height:1; cursor:pointer;
+            border:1px solid #cfe0ff; color:#006aff; background:#ffffff;
+            transition: all .2s ease;
+        }
+        .pp-tab:hover{ background:#f5f9ff; border-color:#bcd3ff; }
+        .pp-tab.is-active{
+            background:#006aff; color:#ffffff; border-color:#006aff;
+            box-shadow: 0 8px 20px rgba(0,106,255,.18);
+        }
+        /* tenká linka uvnitř aktivního btn */
+        .pp-tab-progress{
+            position:absolute; left:10px; right:10px; bottom:6px; height:2px; border-radius:9999px;
+            background: linear-gradient(90deg,#9ec9ff,#ffffff);
+            opacity:0; transform:scaleX(0); transform-origin:left;
+        }
+        .pp-tab.is-active .pp-tab-progress{ opacity:1; animation: ppFill var(--ppDur) linear forwards; }
+        @keyframes ppFill{ from{ transform:scaleX(0) } to{ transform:scaleX(1) } }
+
+        /* Tagy */
+        .pp-tag{ display:inline-flex; align-items:center; gap:.375rem; padding:.25rem .65rem; font-size:.75rem; font-weight:700; border-radius:9999px; background:#f1f5f9; color:#334155; }
+        .pp-dot{ width:.4rem; height:.4rem; border-radius:9999px; display:inline-block; }
+
+        /* Seznam s tečkou na úrovni textu */
+        .pp-li{ display:flex; align-items:center; gap:.5rem; line-height:1.7; }
+        .pp-bullet{ width:.5rem; height:.5rem; border-radius:9999px; flex-shrink:0; transform: translateY(0.5px); }
+
+        @media (prefers-reduced-motion: reduce){
+            .pp-tab.is-active .pp-tab-progress{ animation: none !important; }
+        }
+    </style>
+
+    <!-- LOGIKA: přepínání + autoplay (4 body u všech) -->
+    <script>
+        (function(){
+            const DATA = {
+                lost: {
+                    title: "Doklady ztracené v e-mailech nebo peněžence",
+                    img: "img/chaos1.jpg",
+                    tags: [
+                        {c:"#006aff", t:"Ztráta času"},
+                        {c:"#006aff", t:"Chaotické dohledávání"},
+                    ],
+                    points: [
+                        {c:"#006aff", t:"Účtenky roztroušené v e-mailech a chatech"},
+                        {c:"#006aff", t:"Zdlouhavé dohledávání a přepisování údajů"},
+                        {c:"#006aff", t:"Nejasné, co už bylo předáno účetní"},
+                        {c:"#006aff", t:"Duplicity a chybějící souvislosti u dokladů"}
+                    ]
+                },
+                excel: {
+                    title: "Složité vytváření faktur v Excelu",
+                    img: "img/help-invoice.jpg",
+                    tags: [
+                        {c:"#10b981", t:"Riziko chyb"},
+                        {c:"#10b981", t:"Duplikace verzí"},
+                    ],
+                    points: [
+                        {c:"#10b981", t:"Ruční vyplňování údajů a částek, hlídání DPH"},
+                        {c:"#10b981", t:"Více verzí v přílohách, nejistota poslední verze"},
+                        {c:"#10b981", t:"Bez automatizace — rutina místo práce"},
+                        {c:"#10b981", t:"Zdlouhavé exporty/importy místo přímého odeslání"}
+                    ]
+                },
+                comm: {
+                    title: "Zdlouhavá komunikace s účetní kvůli dokladům",
+                    img: "img/stress-emploee.jpg",
+                    tags: [
+                        {c:"#f59e0b", t:"E-mailový chaos"},
+                        {c:"#f59e0b", t:"Zdržení před uzávěrkou"},
+                    ],
+                    points: [
+                        {c:"#f59e0b", t:"Vlákna e-mailů bez kontextu a jednoho místa pravdy"},
+                        {c:"#f59e0b", t:"Chybí přehled „co chybí“ a kdo je na tahu"},
+                        {c:"#f59e0b", t:"Ztráta času na přeposílání a dotazování"},
+                        {c:"#f59e0b", t:"Nepřehledná historie změn a schvalování"}
+                    ]
+                }
+            };
+
+            const DUR = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ppDur')) || 5200;
+            const tabs = Array.from(document.querySelectorAll('#ppTabs .pp-tab'));
+            const image = document.getElementById('ppImage');
+            const title = document.getElementById('ppTitle');
+            const tags = document.getElementById('ppTags');
+            const list = document.getElementById('ppList');
+
+            let idx = 0, timer = null;
+
+            function start(){ stop(); timer = setTimeout(next, DUR); }
+            function stop(){ if(timer) clearTimeout(timer); timer = null; }
+            function next(){ setActive((idx+1)%tabs.length); }
+
+            function render(d){
+                // tagy
+                tags.innerHTML = d.tags.map(t=>`<span class="pp-tag"><i class="pp-dot" style="background:${t.c}"></i>${t.t}</span>`).join('');
+                // body
+                list.innerHTML = d.points.map(p=>`
+          <li class="pp-li"><span class="pp-bullet" style="background:${p.c}"></span><span>${p.t}</span></li>
+        `).join('');
+            }
+
+            function setActive(i){
+                idx = i;
+                tabs.forEach((b,j)=>{
+                    b.classList.toggle('is-active', j===i);
+                    b.setAttribute('aria-selected', j===i ? 'true' : 'false');
+                    // reset progress animace
+                    const pr = b.querySelector('.pp-tab-progress');
+                    pr.style.animation='none'; pr.style.transform='scaleX(0)'; void pr.offsetWidth; pr.style.animation='';
+                });
+                // progress na aktivním
+                tabs[i].querySelector('.pp-tab-progress').style.animation = `ppFill ${DUR}ms linear forwards`;
+
+                const key = tabs[i].dataset.key;
+                const d = DATA[key];
+
+                image.style.opacity='0'; title.style.opacity='0';
+                setTimeout(()=>{
+                    image.src = d.img; image.alt = d.title;
+                    title.textContent = d.title;
+                    render(d);
+                    image.style.opacity='1'; title.style.opacity='1';
+                },120);
+
+                start();
+            }
+
+            tabs.forEach((b,i)=>b.addEventListener('click',()=>setActive(i,true)));
+            setActive(0);
+        })();
+    </script>
+</section>

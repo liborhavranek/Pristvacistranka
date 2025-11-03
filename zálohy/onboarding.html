@@ -1,0 +1,120 @@
+
+
+<!-- =============== ONBOARDING (zapadne do stylu dokladuj.to) =============== -->
+<section id="onboarding" class="relative py-24 md:py-28 bg-gradient-to-b from-white to-[#f8fbff] overflow-hidden">
+  <!-- HALO pozadí sekce -->
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute inset-0 halo-animate bg-[radial-gradient(1400px_820px_at_50%_-260px,rgba(0,106,255,0.16)_0%,rgba(0,106,255,0.08)_42%,transparent_72%)]"></div>
+  </div>
+
+  <!-- Jednorázové styly pro tuto sekci -->
+  <style>
+    /* sjednocení modré pro bitmapové ikony (PNG) – ladí s #006aff) */
+    #onboarding .icon-brand{
+      filter: invert(31%) sepia(93%) saturate(4500%) hue-rotate(205deg) brightness(1.05) contrast(1.1);
+    }
+    /* drobný „bezpečný“ strop pro výšku ilustrace na velkých displejích */
+    @media (min-width: 1024px){
+      #onboarding .onb-hero-img{ max-height: 520px; }
+    }
+    @media (min-width: 1280px){
+      #onboarding .onb-hero-img{ max-height: 560px; }
+    }
+  </style>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Nadpis -->
+    <header class="text-center mb-14 md:mb-16">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+        <span class="text-[#006aff]">Začněte s&nbsp;dokladuj.to</span>
+        <span class="block text-[#0f172a]">během pár minut</span>
+      </h2>
+      <p class="mt-3 text-[18px] md:text-[20px] lg:text-[22px] font-medium text-[#0f172a] max-w-3xl mx-auto leading-relaxed">
+        Dokladuj.to zvládne každý. Stačí pár minut a&nbsp;vaše doklady, faktury i&nbsp;komunikace s&nbsp;účetní běží online.
+      </p>
+    </header>
+
+    <!-- Obsah: dva sloupce -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-24 items-center">
+      <!-- LEVÝ sloupec: kroky -->
+      <div class="max-w-xl lg:ml-2">
+        <h3 class="mb-8 text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-[#0f172a]">
+          Začít s <span class="text-[#006aff]">dokladuj.to</span> je snadné
+        </h3>
+
+        <ol class="space-y-8">
+          <!-- 1 -->
+          <li class="flex items-start gap-5">
+            <img src="img/icons/registration.png" alt="" class="icon-brand w-12 h-12 md:w-14 md:h-14 object-contain select-none pointer-events-none">
+            <div>
+              <h4 class="text-[20px] md:text-[22px] font-extrabold text-[#0f172a]">Zaregistrujte se</h4>
+              <p class="mt-1 text-[16.75px] text-[#0f172a]/90">
+                Účet <strong>ZDARMA</strong> přes e-mail a heslo — bez platebních údajů.
+              </p>
+            </div>
+          </li>
+
+          <!-- 2 -->
+          <li class="flex items-start gap-5">
+            <img src="img/icons/file.png" alt="" class="icon-brand w-12 h-12 md:w-14 md:h-14 object-contain select-none pointer-events-none">
+            <div>
+              <h4 class="text-[20px] md:text-[22px] font-extrabold text-[#0f172a]">Nahrajte první doklad</h4>
+              <p class="mt-1 text-[16.75px] text-[#0f172a]/90">
+                AI údaje přečte automaticky — vy jen zkontrolujete a můžete fakturovat.
+              </p>
+            </div>
+          </li>
+
+          <!-- 3 -->
+          <li class="flex items-start gap-5">
+            <img src="img/icons/analysis.png" alt="" class="icon-brand w-12 h-12 md:w-14 md:h-14 object-contain select-none pointer-events-none">
+            <div>
+              <h4 class="text-[20px] md:text-[22px] font-extrabold text-[#0f172a]">Mějte přehled o dokladech</h4>
+              <p class="mt-1 text-[16.75px] text-[#0f172a]/90">
+                Vše bezpečně online — návraty, úpravy i historie změn kdykoli.
+              </p>
+            </div>
+          </li>
+
+          <!-- 4 -->
+          <li class="flex items-start gap-5">
+            <img src="img/icons/taxable.png" alt="" class="icon-brand w-12 h-12 md:w-14 md:h-14 object-contain select-none pointer-events-none">
+            <div>
+              <h4 class="text-[20px] md:text-[22px] font-extrabold text-[#0f172a]">Rozšiřte tarif, až budete potřebovat</h4>
+              <p class="mt-1 text-[16.75px] text-[#0f172a]/90">
+                Jakmile uvidíte úsporu času, přejdete na vyšší tarif s dalšími funkcemi.
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <!-- CTA -->
+        <div class="mt-12">
+          <a href="/registrace"
+             class="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-[#006aff] text-white text-[17px] font-bold shadow-[0_10px_25px_rgba(0,106,255,.35)] hover:shadow-[0_12px_28px_rgba(0,106,255,.45)] hover:-translate-y-[1px] transition-all">
+            Vyzkoušet zdarma
+          </a>
+          <span class="ml-3 align-middle text-sm text-[#0f172a]/60">Registrace bez platebních údajů</span>
+        </div>
+      </div>
+
+      <!-- PRAVÝ sloupec: ilustrace (s vlastním halo) -->
+      <div class="relative flex justify-center lg:justify-end">
+        <!-- jemné lokální halo za ilustrací -->
+        <div class="pointer-events-none absolute inset-0 -z-10">
+          <div class="absolute right-[-8%] top-[10%] w-[520px] h-[520px] rounded-full blur-3xl opacity-40
+                      bg-[radial-gradient(circle,rgba(0,106,255,0.18)_0%,rgba(0,106,255,0.10)_45%,transparent_70%)]"></div>
+        </div>
+
+        <img src="img/start.svg" alt="Ukázka aplikace dokladuj.to"
+             class="onb-hero-img w-[125%] md:w-[135%] lg:w-[118%] xl:w-[112%] 2xl:w-[108%]
+                    max-w-[1200px] h-auto object-contain select-none pointer-events-none
+                    drop-shadow-[0_10px_40px_rgba(0,106,255,.15)]">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
