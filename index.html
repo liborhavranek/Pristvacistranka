@@ -941,15 +941,15 @@
                         <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
               bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
                             <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
-                                <span class="block font-semibold text-[15.5px] leading-tight">Jindřiška Kavalírová</span>
-                                <span class="block text-[13px] text-white/90">Manager • Euromont CB s.r.o. </span>
+                                <span class="block font-semibold text-[15.5px] leading-tight">Jindřiška Kavalírová </span>
+                                <span class="block text-[13px] text-white/90">Manager • Euromont CB s.r.o.</span>
                             </div>
                         </figcaption>
                     </figure>
                     <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
                         <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
-                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Skvělá fakturace</h3>
-                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Největší úspora je pro mne systém na vytváření faktur – automatické počítání DPH, kontrola dat dle ARES to je něco, co používám denně, celkově už si neumíme představit vracet se k papírové verzi čehokoli.</p>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Efektivní práce s doklady </h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Dokladuj.to nám velmi zefektivnilo práci s doklady a komunikaci s účetní firmou.</p>
                     </div>
                 </article>
 
@@ -966,8 +966,8 @@
                         <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
               bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
                             <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
-                                <span class="block font-semibold text-[15.5px] leading-tight">Hana Vaňousová</span>
-                                <span class="block text-[13px] text-white/90">jednatelka • FINANCE V+V s.r.o. </span>
+                                <span class="block font-semibold text-[15.5px] leading-tight">Hana Vaňousová </span>
+                                <span class="block text-[13px] text-white/90">jednatelka • FINANCE V+V s.r.o.</span>
                             </div>
                         </figcaption>
                     </figure>
@@ -991,14 +991,14 @@
                         <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
               bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
                             <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
-                                <span class="block font-semibold text-[15.5px] leading-tight">Aleš Kuboušek</span>
-                                <span class="block text-[13px] text-white/90">jednatel • Ajka Solution s.r.o. </span>
+                                <span class="block font-semibold text-[15.5px] leading-tight">Aleš Kuboušek </span>
+                                <span class="block text-[13px] text-white/90">Jednatel • Ajka Solution s.r.o.</span>
                             </div>
                         </figcaption>
                     </figure>
                     <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
                         <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
-                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Žádný chaos v dokladech </h3>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Žádné ztracené doklady </h3>
                         <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Už je to skoro 3 roky, co používáme dokladujt.to. 3 roky už nevím, co je to vypraná, zmačkaná či nečitelná účtenka nebo doklad.. Nakoupím, vyfotím. Neskladuju. Na farmě pak zase vytvořím fakturu přímo na hale a furt mám všechno po ruce. A protože sem bordelář, tak to zbožňuji. No a taky odpadlo 3x 64Kč za doporučené psaní s účtenkami od obchoďáků :-)</p>
                     </div>
                 </article>
@@ -1094,6 +1094,52 @@
         .logo-row img { height: 78px; max-height: 78px; transform: scale(1.05); transform-origin: center; transition: transform .4s ease; }
         .logo-row img:hover { transform: scale(1.12); }
     </style>
+
+
+
+
+    <script>
+        // Sem doplň SVÉ cesty k 8 logům
+        const logos = [
+            'img/logos/logo1.png',
+            'img/logos/logo2.png',
+            'img/logos/logo3.png',
+            'img/logos/logo4.png',
+            'img/logos/logo5.png',
+            'img/logos/logo6.png',
+            'img/logos/logo7.png',
+            'img/logos/logo8.png',
+            'img/logos/logo9.png',
+            'img/logos/logo10.png',
+            'img/logos/logo11.png',
+        ];
+
+        function fillLogos(rowId, sources) {
+            const row = document.getElementById(rowId);
+            const template = document.getElementById('logo-template').content;
+
+            // Vložíme 1× všech 8 log
+            sources.forEach((src, i) => {
+                const node = template.cloneNode(true);
+                const img = node.querySelector('img');
+                img.src = src;
+                img.alt = `Logo ${i + 1}`;
+                row.appendChild(node);
+            });
+
+            // Zdvojíme pro plynulý nekonečný posun (marquee)
+            sources.forEach((src, i) => {
+                const node = template.cloneNode(true);
+                const img = node.querySelector('img');
+                img.src = src;
+                img.alt = `Logo ${i + 1} (dup)`;
+                row.appendChild(node);
+            });
+        }
+
+        // Naplníme JEN první řádek
+        fillLogos('logo-row-1', logos);
+    </script>
 
     <script>
         (function() {

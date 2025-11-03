@@ -1,0 +1,459 @@
+<!-- =============== Reference (polished; 2×2 grid + pagination po 4) =============== -->
+<section id="reference" class="relative py-20 md:py-24 bg-gradient-to-b from-white to-[#f8fbff] overflow-hidden">
+
+    <!-- HALO -->
+    <div class="pointer-events-none absolute inset-0 z-0">
+        <div class="absolute inset-0 halo-animate bg-[radial-gradient(1200px_720px_at_50%_140px,rgba(0,106,255,0.28)_0%,rgba(0,106,255,0.10)_42%,transparent_72%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_18%_280px,rgba(0,106,255,0.18)_0%,transparent_78%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_82%_280px,rgba(0,106,255,0.18)_0%,transparent_78%)]"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Nadpis -->
+        <header class="mb-14 text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-[#006aff]">
+                <span class="block">Co říkají naši klienti</span>
+            </h2>
+            <p class="mt-2 text-[18px] md:text-[22px] lg:text-[24px] font-medium text-[#0f172a] max-w-3xl mx-auto leading-relaxed">
+                dokladuj.to pomáhá stovkám firem, živnostníků i účetních kanceláří po celé České republice.
+                Podívejte se, jak o nás mluví ti, kteří s námi spravují své účetnictví každý den.
+            </p>
+        </header>
+
+        <!-- Pager (JS z toho udělá stránky po 4 kartách, 2×2) -->
+        <div id="ref-pager" class="relative" data-aos="fade-up" data-aos-delay="150" aria-live="polite">
+            <!-- Sem vlož karty (beze změny). JS je rozřezá po 4 do stránek -->
+            <div id="ref-cards" class="contents">
+
+                <!-- ==== PŮVODNÍ 4 KARTY (BEZE ZMĚN) ==== -->
+                <!-- Lipár -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/lipar-foto.png" alt="Petr Lipár" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Petr Lipár</span>
+                                <span class="block text-[13px] text-white/90">bytový designer</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Rychlé nahrávání, nulový chaos</h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Stovky dokladů nahraju na pár kliknutí. Papírové jen vyfotím v mobilní aplikaci a je hotovo.</p>
+                    </div>
+                </article>
+
+                <!-- Novák -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/novak-foto.jpg" alt="Tomáš Novák" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Tomáš Novák</span>
+                                <span class="block text-[13px] text-white/90">malíř a řemeslník</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Pořádek v papírech i na cestách</h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Účtenky jen vyfotím. Večer mám vše připravené k fakturaci — bez hledání a přeposílání.</p>
+                    </div>
+                </article>
+
+                <!-- CRC-->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/crc-foto.jpg" alt="Tomáš Kuboušek" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Šárka Váša Cislerová</span>
+                                <span class="block text-[13px] text-white/90">Centrum klinických studií • Finance Manager</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Okamžitá dostupnost dokladů</h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Faktury a doklady jsou ihned uložené a dostupné všem oprávněným uživatelům. Systém je přehledný a při komunikaci s účetní lze snadno doklady vyhledat.</p>
+                    </div>
+                </article>
+
+                <!-- ellex -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/ellex-foto.png" alt="AGI Kovovýroba" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Tereza Vaněčková</span>
+                                <span class="block text-[13px] text-white/90">prodej elektroniky • ellex gk s.r.o.</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Úspora času</h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Největší úspora je pro mne systém na vytváření faktur – automatické počítání DPH, kontrola dat dle ARES to je něco, co používám denně, celkově už si neumíme představit vracet se k papírové verzi čehokoli.</p>
+                    </div>
+                </article>
+
+                <!-- ==== DUPLIKÁTY NA UKÁZKU (další 4) ==== -->
+                <!-- (zůstávají stejné karty, jen pro demonstraci další „stránky“) -->
+                <!-- Lipár (dup) -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/euro-foto.jpeg" alt="AGI Kovovýroba" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Jindřiška Kavalírová</span>
+                                <span class="block text-[13px] text-white/90">Manager • Euromont CB s.r.o. </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Skvělá fakturace</h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Největší úspora je pro mne systém na vytváření faktur – automatické počítání DPH, kontrola dat dle ARES to je něco, co používám denně, celkově už si neumíme představit vracet se k papírové verzi čehokoli.</p>
+                    </div>
+                </article>
+
+                <!-- Novák (dup) -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/finance-foto.png" alt="AGI Kovovýroba" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Hana Vaňousová</span>
+                                <span class="block text-[13px] text-white/90">jednatelka • FINANCE V+V s.r.o. </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Doklady na jednom místě </h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">„Máme všechny doklady na jednom místě a účetní vidí vše v reálném čase — konec dohledávání a urgencí.</p>
+                    </div>
+                </article>
+
+                <!-- Kuboušek (dup) -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/finance-foto.png" alt="AGI Kovovýroba" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">Aleš Kuboušek</span>
+                                <span class="block text-[13px] text-white/90">jednatel • Ajka Solution s.r.o. </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Žádný chaos v dokladech </h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Už je to skoro 3 roky, co používáme dokladujt.to. 3 roky už nevím, co je to vypraná, zmačkaná či nečitelná účtenka nebo doklad.. Nakoupím, vyfotím. Neskladuju. Na farmě pak zase vytvořím fakturu přímo na hale a furt mám všechno po ruce. A protože sem bordelář, tak to zbožňuji. No a taky odpadlo 3x 64Kč za doporučené psaní s účtenkami od obchoďáků :-)</p>
+                    </div>
+                </article>
+
+
+
+
+                <!-- AGI -->
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <svg class="absolute right-5 top-5 w-10 h-10 text-[#006aff]/10" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M7.2 6.5A5.7 5.7 0 0 0 2 12.3V22h8v-8H7.7A3.7 3.7 0 0 1 4 10.2l3.2-3.7Zm12 0A5.7 5.7 0 0 0 14 12.3V22h8v-8h-2.3a3.7 3.7 0 0 1-3.7-3.8l3.2-3.7Z"/>
+                    </svg>
+                    <figure class="relative w-[42%] min-w-[42%] h-full overflow-hidden">
+                        <img src="img/testimonials/agi-foto.png" alt="AGI Kovovýroba" class="absolute inset-0 w-full h-full object-cover">
+                        <figcaption class="absolute bottom-0 left-0 right-0 px-4 py-2.5
+              bg-gradient-to-t from-[#003a99]/90 via-[#004fcc]/55 to-transparent text-white">
+                            <div class="drop-shadow-[0_1px_2px_rgba(0,0,0,.45)]">
+                                <span class="block font-semibold text-[15.5px] leading-tight">AGI Kovovýroba</span>
+                                <span class="block text-[13px] text-white/90">výroba a montáže</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="flex-1 h-full px-6 md:px-7 py-5 md:py-6 flex flex-col justify-center">
+                        <div class="flex text-[#f5b301] text-[14px] mb-1.5" aria-label="5 z 5">★★★★★</div>
+                        <h3 class="font-extrabold text-[18.5px] md:text-[19px] text-[#0f172a] leading-snug">Konec e-mailovým přílohám</h3>
+                        <p class="mt-2 text-[15.5px] md:text-[16px] leading-7 text-[#0f172a]/85">Místo přeposílání prostě nahrajeme. Rychlejší domluva a víc času na zakázky.</p>
+                    </div>
+                </article>
+                <!-- … -->
+                </article>
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <!-- … -->
+                </article>
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <!-- … -->
+                </article>
+                <article class="t-card min-w-[92%] md:min-w-[48%] snap-start flex bg-white/95 border border-[#e5efff]
+          rounded-2xl md:rounded-[22px] shadow-[0_4px_16px_rgba(0,106,255,0.08)]
+          hover:shadow-[0_8px_26px_rgba(0,106,255,0.14)] transition-all duration-400
+          overflow-hidden relative h-[260px] md:h-[240px]">
+                    <!-- … -->
+                </article>
+
+            </div>
+        </div>
+
+        <!-- Tečky (funkční – stránkování) -->
+        <div id="ref-dots" class="mt-8 flex justify-center gap-2"></div>
+
+        <!-- Horní řada log (beze změny) -->
+        <div class="relative overflow-hidden mt-20">
+            <div class="logo-row-wrapper">
+                <div class="logo-row animate-scroll-left" id="logo-row-1"></div>
+            </div>
+        </div>
+
+        <!-- Template -->
+        <template id="logo-template">
+            <img src="/img/logo.webp" alt="Logo firmy"
+                 class="h-[52px] md:h-[60px] lg:h-[68px] w-auto max-w-[200px] object-contain mx-8
+           opacity-80 grayscale brightness-90 contrast-110
+           hover:opacity-100 hover:grayscale-0 transition duration-300" />
+        </template>
+
+        <!-- CTA -->
+        <div class="mt-12 md:mt-14 flex justify-center">
+            <a href="https://app.dokladujto.cz/registrace"
+               class="inline-flex items-center gap-2.5 rounded-xl px-7 py-3 text-[16.5px] font-semibold text-white
+         bg-gradient-to-r from-[#006aff] to-[#045fe0]
+         shadow-[0_6px_22px_rgba(0,106,255,.38)]
+         hover:shadow-[0_8px_28px_rgba(0,106,255,.48)]
+         hover:scale-[1.02] transition-all duration-300">
+                Vyzkoušet zdarma
+                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <style>
+        /* Zvýšení výšky celého pásu log */
+        .logo-row-wrapper { height: 90px; }
+        .logo-row img { height: 78px; max-height: 78px; transform: scale(1.05); transform-origin: center; transition: transform .4s ease; }
+        .logo-row img:hover { transform: scale(1.12); }
+    </style>
+
+    <script>
+        (function() {
+            const PAGE_SIZE_DEFAULT = 4;           // běžné stránky = 4 karty (2×2)
+            const SPECIAL_PAGE_INDEX = 1;          // druhá stránka má speciální 3-kartový layout
+            const cardsWrap = document.getElementById('ref-cards');
+            const pager     = document.getElementById('ref-pager');
+            const dotsWrap  = document.getElementById('ref-dots');
+            if (!cardsWrap || !pager || !dotsWrap) return;
+
+            const allCards = Array.from(cardsWrap.querySelectorAll('.t-card'));
+            if (!allCards.length) return;
+
+            // ---------- Sestavení stránek ----------
+            const pages = [];
+            let i = 0;
+            let pageIndex = 0;
+
+            while (i < allCards.length) {
+                // defaultně chceme 4 karty na stránku
+                let take = PAGE_SIZE_DEFAULT;
+
+                // pro speciální 2. stránku chceme jen 3 karty (zbytek nesmíme zahodit)
+                if (pageIndex === SPECIAL_PAGE_INDEX) take = 3;
+
+                const slice = allCards.slice(i, i + take);
+
+                // vytvoříme DOM kontejner stránky
+                let page = document.createElement('div');
+
+                if (pageIndex === SPECIAL_PAGE_INDEX) {
+                    // 2. stránka: 2 malé vlevo + 1 velká vpravo
+                    const a = slice[0], b = slice[1], c = slice[2];
+                    const twoCols = document.createElement('div');
+                    twoCols.className = 'grid md:grid-cols-2 gap-6 md:gap-7';
+
+                    const leftCol = document.createElement('div');
+                    leftCol.className = 'grid gap-6 md:gap-7';
+                    if (a) { a.dataset.role = 'small-left'; leftCol.appendChild(a); }
+                    if (b) { b.dataset.role = 'small-left'; leftCol.appendChild(b); }
+
+                    const rightCol = document.createElement('div');
+                    if (c) { c.dataset.role = 'big-right'; rightCol.appendChild(c); }
+
+                    twoCols.appendChild(leftCol);
+                    twoCols.appendChild(rightCol);
+                    page = twoCols;
+                } else {
+                    // běžná stránka: 2×2 grid
+                    page.className = 'grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7';
+                    slice.forEach(card => page.appendChild(card));
+                }
+
+                pages.push(page);
+                i += take;
+                pageIndex++;
+            }
+
+            // Render stránek
+            cardsWrap.innerHTML = '';
+            pages.forEach((p, idx) => {
+                if (idx !== 0) p.style.display = 'none';
+                cardsWrap.appendChild(p);
+            });
+
+            // ---------- Tečky ----------
+            dotsWrap.innerHTML = '';
+            const dots = pages.map((_, idx) => {
+                const b = document.createElement('button');
+                b.type = 'button';
+                b.className = 'w-2.5 h-2.5 rounded-full bg-[#cfe1ff] hover:bg-[#9ec4ff] transition';
+                b.setAttribute('aria-label', `Stránka ${idx + 1}`);
+                dotsWrap.appendChild(b);
+                return b;
+            });
+
+            let current = 0;
+
+            const isMd = () => window.matchMedia('(min-width: 768px)').matches;
+            const getGap = () => (isMd() ? 28 : 24); // gap-7 / gap-6
+
+            // ---------- Dorovnání výšek (vzdušně přes min-height) ----------
+            function equalizeHeights(pageEl, pageIdx) {
+                const cards = Array.from(pageEl.querySelectorAll('.t-card'));
+                // reset
+                cards.forEach(c => { c.style.minHeight = ''; c.style.height = ''; });
+
+                if (!isMd()) return; // na mobilu 1 sloupec = auto
+
+                if (pageIdx === SPECIAL_PAGE_INDEX) {
+                    // dvě malé vlevo na stejnou výšku
+                    const smalls = Array.from(pageEl.querySelectorAll('.t-card[data-role="small-left"]'));
+                    const big    = pageEl.querySelector('.t-card[data-role="big-right"]');
+
+                    if (smalls.length) {
+                        let maxSmall = 0;
+                        smalls.forEach(c => { c.style.minHeight = ''; maxSmall = Math.max(maxSmall, c.offsetHeight); });
+                        smalls.forEach(c => c.style.minHeight = maxSmall + 'px');
+
+                        if (big) {
+                            const bigH = (maxSmall * 2) + getGap();
+                            big.style.minHeight = bigH + 'px';
+                        }
+                    }
+                } else {
+                    // standardní 2×2: srovnat PO ŘADÁCH (každá dvojice zvlášť)
+                    for (let r = 0; r < cards.length; r += 2) {
+                        const row = cards.slice(r, r + 2);
+                        let maxH = 0;
+                        row.forEach(c => { c.style.minHeight = ''; maxH = Math.max(maxH, c.offsetHeight); });
+                        row.forEach(c => c.style.minHeight = maxH + 'px');
+                    }
+                }
+            }
+
+            function updateDots() {
+                dots.forEach((d, i) => {
+                    d.classList.toggle('bg-[#006aff]', i === current);
+                    d.classList.toggle('bg-[#cfe1ff]', i !== current);
+                });
+            }
+
+            function showPage(i) {
+                if (i < 0 || i >= pages.length || i === current) return;
+                pages[current].style.display = 'none';
+                pages[i].style.display = '';
+                current = i;
+                updateDots();
+                equalizeHeights(pages[current], current);
+            }
+
+            // init
+            updateDots();
+            equalizeHeights(pages[current], current);
+
+            // po kliknutí na tečky
+            dots.forEach((d, i) => d.addEventListener('click', () => showPage(i)));
+
+            // klávesové šipky
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') showPage(Math.min(current + 1, pages.length - 1));
+                if (e.key === 'ArrowLeft')  showPage(Math.max(current - 1, 0));
+            });
+
+            // přepočet po načtení obrázků a fontů
+            Array.from(document.querySelectorAll('#ref-cards img')).forEach(img => {
+                if (!img.complete) img.addEventListener('load', () => equalizeHeights(pages[current], current), { once: true });
+            });
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(() => equalizeHeights(pages[current], current));
+            }
+
+            // reflow při změně velikosti
+            let t = null;
+            window.addEventListener('resize', () => {
+                clearTimeout(t);
+                t = setTimeout(() => equalizeHeights(pages[current], current), 100);
+            });
+        })();
+    </script>
+
+
+</section>
